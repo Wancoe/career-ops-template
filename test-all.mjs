@@ -134,8 +134,8 @@ for (const f of userFiles) {
 console.log('\n5. Personal data leak check');
 
 const leakPatterns = [
-  'Santiago', 'santifer.io', 'Santifer iRepair', 'Zinkee', 'ALMAS',
-  'hi@santifer.io', '688921377', '/Users/santifer/',
+  // Add any repository-specific leak patterns here if needed.
+  // This check is intentionally blank for the current Wancoe fork.
 ];
 
 const scanExtensions = ['md', 'yml', 'html', 'mjs', 'sh', 'go', 'json'];

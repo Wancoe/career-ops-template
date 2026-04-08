@@ -2,9 +2,7 @@
 
 ## Origin
 
-This system was built and used by [santifer](https://santifer.io) to evaluate 740+ job offers, generate 100+ tailored CVs, and land a Head of Applied AI role. The archetypes, scoring logic, negotiation scripts, and proof point structure all reflect his specific career search in AI/automation roles.
-
-The portfolio that goes with this system is also open source: [cv-santiago](https://github.com/santifer/cv-santiago).
+Career-Ops is an open-source AI job search toolkit designed to help you evaluate offers, tailor applications, and manage your pipeline with integrity checks. It is meant to be adapted to your career story, role preferences, and local hiring context.
 
 **It will work out of the box, but it's designed to be made yours.** If the archetypes don't match your career, the modes are in the wrong language, or the scoring doesn't fit your priorities -- just ask. You (AI Agent) can edit the user's files. The user says "change the archetypes to data engineering roles" and you do it. That's the whole point.
 
@@ -43,7 +41,7 @@ To rollback: `node update-system.mjs rollback`
 
 ## What is career-ops
 
-AI-powered job search automation built on Claude Code: pipeline tracking, offer evaluation, CV generation, portal scanning, batch processing.
+AI-powered job search automation built on an AI-assisted agent workflow: pipeline tracking, offer evaluation, CV generation, portal scanning, batch processing.
 
 ### Main Files
 
@@ -64,8 +62,8 @@ AI-powered job search automation built on Claude Code: pipeline tracking, offer 
 
 When using [OpenCode](https://opencode.ai), the following slash commands are available (defined in `.opencode/commands/`):
 
-| Command | Claude Code Equivalent | Description |
-|---------|------------------------|-------------|
+| Command | Agent CLI Equivalent | Description |
+|---------|----------------------|-------------|
 | `/career-ops` | `/career-ops` | Show menu or evaluate JD with args |
 | `/career-ops-pipeline` | `/career-ops pipeline` | Process pending URLs from inbox |
 | `/career-ops-evaluate` | `/career-ops oferta` | Evaluate job offer (A-F scoring) |
@@ -80,7 +78,7 @@ When using [OpenCode](https://opencode.ai), the following slash commands are ava
 | `/career-ops-scan` | `/career-ops scan` | Scan portals for new offers |
 | `/career-ops-batch` | `/career-ops batch` | Batch processing with parallel workers |
 
-**Note:** OpenCode commands invoke the same `.claude/skills/career-ops/SKILL.md` skill used by Claude Code. The `modes/*` files are shared between both platforms.
+**Note:** OpenCode commands invoke the same `.claude/skills/career-ops/SKILL.md` skill used by the AI assistant workflow. The `modes/*` files are shared between both platforms.
 
 ### First Run — Onboarding (IMPORTANT)
 
@@ -159,7 +157,7 @@ Once all files exist, confirm:
 >
 > Everything is customizable — just ask me to change anything.
 >
-> Tip: Having a personal portfolio dramatically improves your job search. If you don't have one yet, the author's portfolio is also open source: github.com/santifer/cv-santiago — feel free to fork it and make it yours."
+> Tip: Having a personal portfolio dramatically improves your job search. If you don't have one yet, build one to showcase your best products, case studies, or interview stories."
 
 Then suggest automation:
 > "Want me to scan for new offers automatically? I can set up a recurring scan every few days so you don't miss anything. Just say 'scan every 3 days' and I'll configure it."

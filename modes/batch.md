@@ -5,7 +5,7 @@ Dos modos de uso: **conductor --chrome** (navega portales en tiempo real) o **st
 ## Arquitectura
 
 ```
-Claude Conductor (claude --chrome --dangerously-skip-permissions)
+AI Conductor (`claude --chrome --dangerously-skip-permissions`)
   │
   │  Chrome: navega portales (sesiones logueadas)
   │  Lee DOM directo — el usuario ve todo en tiempo real

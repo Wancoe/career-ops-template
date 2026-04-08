@@ -41,7 +41,7 @@ PRs without a corresponding issue may be closed if they don't align with the pro
 
 ## Guidelines
 
-- Keep modes language-agnostic when possible (Claude handles both EN and ES)
+- Keep modes language-agnostic when possible (the AI assistant handles both EN and ES)
 - Scripts should handle missing files gracefully (check `existsSync` before `readFileSync`)
 - Dashboard changes require `go build` — test with real data before submitting
 - Don't commit personal data (cv.md, profile.yml, applications.md, reports/)
@@ -70,4 +70,4 @@ cd dashboard && go build -o career-dashboard .
 
 - [Open an issue](https://github.com/Wancoe/career-ops-template/issues)
 - [Read the architecture docs](docs/ARCHITECTURE.md)
-- Built by [santifer](https://santifer.io)
+- Maintained by Wancoe

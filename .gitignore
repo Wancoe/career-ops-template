@@ -31,7 +31,7 @@ node_modules/
 *.mov
 *.mp4
 
-# Claude Code local
+# Local AI assistant state
 .claude/settings.local.json
 .claude/memory/
 career-dashboard

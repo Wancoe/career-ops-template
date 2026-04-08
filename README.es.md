@@ -3,7 +3,7 @@
 [English](README.md) | [Español](README.es.md)
 
 <p align="center">
-  <a href="https://x.com/santifer"><img src="docs/career-ops-banner.png" alt="Career-Ops — Sistema Multi-Agente de Busqueda de Empleo" width="800"></a>
+  <a href="https://github.com/Wancoe/career-ops-template"><img src="docs/career-ops-banner.png" alt="Career-Ops — Sistema Multi-Agente de Busqueda de Empleo" width="800"></a>
 </p>
 
 <p align="center">
@@ -37,7 +37,7 @@
 
 <p align="center"><strong>740+ ofertas evaluadas · 100+ CVs personalizados · 1 trabajo soñado conseguido</strong></p>
 
-<p align="center"><a href="https://discord.gg/8pRpHETxa4"><img src="https://img.shields.io/badge/Unete_a_la_comunidad-Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a></p>
+<p align="center"><a href="https://github.com/Wancoe/career-ops-template"><img src="https://img.shields.io/badge/Repo-Wancoe%2Fcareer--ops--template-000?style=for-the-badge&logo=github&logoColor=white" alt="Career-Ops Repository"></a></p>
 
 ## Que es esto
 
@@ -53,7 +53,7 @@ Career-Ops convierte cualquier CLI de IA en un centro de mando de busqueda de em
 
 > **Aviso: las primeras evaluaciones no seran buenas.** El sistema no te conoce todavia. Dale contexto -- tu CV, tu historia profesional, tus proof points, tus preferencias, en que eres bueno, que quieres evitar. Cuanto mas lo nutras, mejor filtra. Piensa en ello como hacer onboarding a un recruiter nuevo: la primera semana necesita conocerte, luego se vuelve invaluable.
 
-Construido por alguien que lo uso para evaluar 740+ ofertas, generar 100+ CVs personalizados, y conseguir un rol de Head of Applied AI. [Lee el case study completo](https://santifer.io/career-ops).
+Career-Ops es una herramienta de búsqueda de empleo diseñada para ayudarte a evaluar ofertas, generar aplicaciones personalizadas y seguir tu pipeline con mayor claridad.
 
 ## Features
 
@@ -214,13 +214,13 @@ career-ops/
 - [CUSTOMIZATION.md](docs/CUSTOMIZATION.md) -- Como personalizar
 - [ARCHITECTURE.md](docs/ARCHITECTURE.md) -- Como funciona el sistema
 
-## Tambien Open Source
+## Build a portfolio
 
-- **[cv-santiago](https://github.com/santifer/cv-santiago)** -- El portfolio (santifer.io) con chatbot IA, dashboard LLMOps y case studies. Si necesitas un portfolio para acompañar tu busqueda de empleo, echale un vistazo.
+- Construye un portafolio propio con tus mejores proyectos, métricas y estudios de caso. Un portfolio claro complementa esta herramienta y aumenta la credibilidad de tus aplicaciones.
 
 ## Star History
 
-<a href="https://www.star-history.com/?repos=santifer%2Fcareer-ops&type=timeline&legend=top-left">
+<a href="https://www.star-history.com/?repos=Wancoe%2Fcareer-ops-template&type=timeline&legend=top-left">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Wancoe/career-ops-template&type=timeline&theme=dark&legend=top-left" />
    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Wancoe/career-ops-template&type=timeline&legend=top-left" />
@@ -245,9 +245,4 @@ MIT
 
 ## Conecta
 
-[![Website](https://img.shields.io/badge/santifer.io-000?style=for-the-badge&logo=safari&logoColor=white)](https://santifer.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/santifer)
-[![X](https://img.shields.io/badge/X-000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/santifer)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/8pRpHETxa4)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hola@santifer.io)
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy_Me_a_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/santifer)
+[![Repo](https://img.shields.io/badge/Repo-Wancoe%2Fcareer--ops--template-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Wancoe/career-ops-template)

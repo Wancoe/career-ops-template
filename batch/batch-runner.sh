@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# career-ops batch runner — standalone orchestrator for claude -p workers
+# career-ops batch runner — standalone orchestrator for local AI worker processes
 # Reads batch-input.tsv, delegates each offer to a claude -p worker,
 # tracks state in batch-state.tsv for resumability.
 
@@ -28,8 +28,8 @@ MAX_RETRIES=2
 
 usage() {
   cat <<'USAGE'
-career-ops batch runner — process job offers in batch via claude -p workers
-Uses your default Claude model (Claude Max subscription).
+career-ops batch runner — process job offers in batch via local AI worker processes
+Uses your default `claude` CLI model if configured.
 
 Usage: batch-runner.sh [OPTIONS]
 
@@ -306,7 +306,7 @@ process_offer() {
     -e "s|{{ID}}|${id}|g" \
     "$PROMPT_FILE" > "$resolved_prompt"
 
-  # Launch claude -p worker (uses default model from Claude Max subscription)
+  # Launch claude -p worker (uses the configured local CLI model)
   local exit_code=0
   claude -p \
     --dangerously-skip-permissions \

@@ -4,7 +4,7 @@
 
 ```
                     ┌─────────────────────────────────┐
-                    │         Claude Code Agent        │
+                    │         AI Agent Engine          │
                     │   (reads CLAUDE.md + modes/*.md) │
                     └──────────┬──────────────────────┘
                                │
@@ -63,7 +63,7 @@ batch-input.tsv    →  batch-runner.sh  →  N × claude -p workers
                     (tracks progress)
 ```
 
-Each worker is a headless Claude instance (`claude -p`) that receives the full `batch-prompt.md` as context. Workers produce:
+Each worker is a headless agent instance (`claude -p`) that receives the full `batch-prompt.md` as context. Workers produce:
 - Report .md
 - PDF
 - Tracker TSV line
