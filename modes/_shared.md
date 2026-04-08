@@ -48,12 +48,16 @@ Classify every offer into one of these types (or hybrid of 2):
 
 | Archetype | Key signals in JD |
 |-----------|-------------------|
-| AI Platform / LLMOps | "observability", "evals", "pipelines", "monitoring", "reliability" |
-| Agentic / Automation | "agent", "HITL", "orchestration", "workflow", "multi-agent" |
-| Technical AI PM | "PRD", "roadmap", "discovery", "stakeholder", "product manager" |
-| AI Solutions Architect | "architecture", "enterprise", "integration", "design", "systems" |
-| AI Forward Deployed | "client-facing", "deploy", "prototype", "fast delivery", "field" |
-| AI Transformation | "change management", "adoption", "enablement", "transformation" |
+| Graphic Designer | "design", "visual", "branding", "layout", "typography", "Adobe", "Figma" |
+| Content Creator | "content", "social media", "copywriting", "storytelling", "blog", "video" |
+| Marketing Specialist | "marketing", "campaign", "strategy", "analytics", "SEO", "PPC", "growth" |
+| UX/UI Designer | "UX", "UI", "user experience", "interface", "prototyping", "usability" |
+| Art Director | "art direction", "creative direction", "visual strategy", "brand identity" |
+| Copywriter | "copy", "writing", "advertising", "brand voice", "messaging", "content strategy" |
+| Social Media Manager | "social media", "community", "engagement", "influencer", "content calendar" |
+| Digital Artist | "digital art", "illustration", "animation", "3D", "motion graphics" |
+| Brand Manager | "brand management", "brand strategy", "identity", "positioning", "market research" |
+| Creative Director | "creative direction", "leadership", "team management", "portfolio review", "campaign development" |
 
 After detecting archetype, read `modes/_profile.md` for the user's specific framing and proof points for that archetype.
 

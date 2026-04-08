@@ -1,48 +1,58 @@
-# CV -- Alex Chen
+# CV -- Ana Silva
 
-**Location:** Austin, TX
-**Email:** alex@example.com
-**LinkedIn:** linkedin.com/in/alexchen
-**Portfolio:** alexchen.dev
-**GitHub:** github.com/alexchen
+**Location:** São Paulo, SP
+**Email:** ana.silva@email.com
+**LinkedIn:** linkedin.com/in/anasilva
+**Portfolio:** anasilva.design
+**Behance:** behance.net/anasilva
 
 ## Professional Summary
 
-Full-stack AI engineer with 6 years building production ML systems. Led the ML platform at a Series B fintech (2020-2024), scaling from 2 models to 15+ in production. Built real-time fraud detection (99.7% precision, $2M/year saved), recommendation engine (18% uplift), and an internal MLOps platform serving 4 engineering teams.
+UX/UI Designer with 8+ years creating digital experiences that drive business results. Led design teams at top Brazilian agencies, delivering projects that increased conversion rates by 45% and user engagement by 60%. Expert in user-centered design, design systems, and cross-functional collaboration. Passionate about solving complex problems through intuitive, beautiful interfaces.
 
 ## Work Experience
 
-### TechFin Corp -- Austin, TX
-**Senior ML Engineer / ML Platform Lead**
-2020-2024
+### DPZ Agency -- São Paulo, SP
+**Senior UX/UI Designer / Design Lead**
+2021-2024
 
-- Led ML platform team (3 engineers), built internal MLOps tooling: model registry, A/B testing framework, feature store
-- Designed real-time fraud detection pipeline: Kafka → feature computation → model inference → decision engine. 99.7% precision at 50ms p99
-- Built recommendation engine for lending products: collaborative filtering + LLM reranking. 18% conversion uplift
-- Reduced model deployment time from 2 weeks to 4 hours with CI/CD pipeline (GitHub Actions + SageMaker)
-- Established model monitoring: drift detection, performance dashboards (Grafana), automated retraining triggers
+- Led UX/UI design for major e-commerce platform redesign: user research, wireframing, prototyping, and visual design. Increased conversion rate by 45% and reduced bounce rate by 30%
+- Established design system for agency-wide use: components library, style guide, and documentation. Improved design consistency and development speed by 40%
+- Collaborated with product and engineering teams on agile development cycles, conducting user testing and iterating based on feedback
+- Mentored junior designers and conducted design workshops for clients
+- Created brand identity and marketing materials for B2B SaaS company, resulting in 60% increase in client retention
 
-### DataStartup Inc -- Remote
-**ML Engineer**
-2018-2020
+### Africa Agency -- São Paulo, SP
+**UX/UI Designer**
+2018-2021
 
-- Built NLP pipeline for document classification (BERT fine-tuning, 94% accuracy on legal docs)
-- Implemented search ranking with learning-to-rank models
-- Set up experiment tracking with MLflow and model versioning
+- Designed mobile app for financial services: user flows, interaction design, and visual design. App achieved 4.8-star rating and 500K+ downloads
+- Conducted user research and usability testing for web platforms, identifying key pain points and opportunities for improvement
+- Created marketing campaign visuals and social media content for various clients
+- Worked with copywriters and strategists to develop cohesive brand experiences
+
+### Freelance Designer -- Remote
+**Graphic Designer**
+2016-2018
+
+- Designed logos, branding, and marketing materials for small businesses and startups
+- Created illustrations and graphics for digital and print media
+- Developed website designs and user interfaces for client projects
 
 ## Projects
 
-- **FraudShield** (Open Source) -- Real-time fraud detection framework. Kafka Streams + feature store + model serving. 500+ GitHub stars
-- **LLM Eval Toolkit** (Open Source) -- Evaluation framework for LLM applications. Supports custom metrics, regression testing, CI integration
+- **E-commerce Redesign** -- Complete UX/UI overhaul for major Brazilian retailer. Increased conversion rate 45%, reduced cart abandonment 25%
+- **Financial App** -- Mobile banking app design from concept to launch. 500K+ downloads, 4.8-star rating
+- **Design System** -- Comprehensive design system for agency use. Improved consistency and development efficiency
 
 ## Education
 
-- MS Computer Science, UT Austin (2018)
-- BS Computer Science, UC Berkeley (2016)
+- Bachelor's in Graphic Design, Universidade de São Paulo (2016)
+- UX/UI Design Certification, Interaction Design Foundation (2020)
 
 ## Skills
 
-- **ML/AI:** PyTorch, TensorFlow, scikit-learn, Hugging Face, LangChain
-- **MLOps:** SageMaker, MLflow, Kubeflow, Airflow, Feature Store
-- **Infra:** Kubernetes, Kafka, Redis, PostgreSQL, AWS
-- **Languages:** Python, Go, TypeScript, SQL
+- **Design Tools:** Figma, Adobe Creative Suite (Photoshop, Illustrator, InDesign), Sketch, Principle
+- **UX/UI:** User Research, Wireframing, Prototyping, Usability Testing, Design Systems
+- **Other:** HTML/CSS, JavaScript basics, Agile/Scrum, Design Thinking
+- **Languages:** Portuguese (Native), English (Fluent), Spanish (Intermediate)

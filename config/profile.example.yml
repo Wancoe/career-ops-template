@@ -3,14 +3,14 @@
 # This is the single source of truth for your personal data across all modes.
 
 candidate:
-  full_name: "Jane Smith"
-  email: "jane@example.com"
-  phone: "+1-555-0123"
-  location: "San Francisco, CA"
-  linkedin: "linkedin.com/in/janesmith"
-  portfolio_url: "https://janesmith.dev"
-  github: "github.com/janesmith"
-  twitter: "https://x.com/janesmith"
+  full_name: "Ana Silva"
+  email: "ana.silva@email.com"
+  phone: "+55-11-99999-9999"
+  location: "São Paulo, SP"
+  linkedin: "linkedin.com/in/anasilva"
+  portfolio_url: "https://anasilva.design"
+  github: "github.com/anasilva"
+  twitter: "https://x.com/anasilva"
   # (Optional) Canva resume design ID for visual CV generation via /career-ops pdf.
   # Find it in your Canva design URL: https://www.canva.com/design/DAxxxxxxx/...
   # The ID starts with "D" and is 11 characters long.
@@ -19,53 +19,56 @@ candidate:
 target_roles:
   # Your North Star roles — what you're optimizing for
   primary:
-    - "Senior AI Engineer"
-    - "Staff ML Engineer"
+    - "UX/UI Designer"
+    - "Senior Graphic Designer"
   # Archetypes help the evaluation system score fit
   archetypes:
-    - name: "AI/ML Engineer"
-      level: "Senior/Staff"
+    - name: "UX/UI Designer"
+      level: "Senior/Pleno"
       fit: "primary"        # primary = dream role, secondary = good fit, adjacent = stretch
-    - name: "AI Product Manager"
+    - name: "Graphic Designer"
       level: "Senior"
-      fit: "secondary"
-    - name: "Solutions Architect"
+      fit: "primary"
+    - name: "Art Director"
       level: "Mid-Senior"
+      fit: "secondary"
+    - name: "Creative Director"
+      level: "Senior"
       fit: "adjacent"
 
 narrative:
   # Your professional headline (1 line)
-  headline: "ML Engineer turned AI product builder"
+  headline: "UX/UI Designer with 8+ years creating digital experiences"
   # Your exit story — what makes you unique
-  exit_story: "Built and sold my SaaS after 5 years. Now focused on applied AI at scale."
+  exit_story: "Led design teams at top Brazilian agencies. Now focused on user-centered design for digital products."
   # Your top 3-5 superpowers
   superpowers:
-    - "End-to-end ML pipelines"
-    - "Fast prototyping (idea to prod in 2 weeks)"
-    - "Cross-functional communication"
+    - "User research and usability testing"
+    - "Visual design and branding"
+    - "Design system creation"
   # Proof points — projects, articles, case studies with measurable impact
   proof_points:
-    - name: "Project Alpha"
-      url: "https://janesmith.dev/project-alpha"
-      hero_metric: "Reduced inference latency 40%"
-    - name: "Open Source Tool"
-      url: "https://github.com/janesmith/tool"
-      hero_metric: "2K+ GitHub stars"
+    - name: "E-commerce Redesign"
+      url: "https://anasilva.design/ecommerce-case"
+      hero_metric: "Increased conversion rate 45%"
+    - name: "Brand Identity Project"
+      url: "https://anasilva.design/brand-identity"
+      hero_metric: "Client retention improved 60%"
   # Optional: dashboard/demo URL with credentials
   # dashboard:
   #   url: "https://janesmith.dev/demo"
   #   password: "demo-2026"
 
 compensation:
-  target_range: "$150K-200K"     # Your target total comp
-  currency: "USD"
-  minimum: "$120K"               # Walk-away number
-  location_flexibility: "Remote preferred, 1 week/month on-site possible"
+  target_range: "R$ 8.000-12.000"     # Your target total comp
+  currency: "BRL"
+  minimum: "R$ 6.000"               # Walk-away number
+  location_flexibility: "Remote preferred, open to hybrid in São Paulo"
 
 location:
-  country: "United States"
-  city: "San Francisco"
-  timezone: "PST"
-  visa_status: "No sponsorship needed"
+  country: "Brazil"
+  city: "São Paulo"
+  timezone: "BRT"
+  visa_status: "Brazilian citizen"
   # For remote roles outside your country:
   # onsite_availability: "1 week/month in any city"

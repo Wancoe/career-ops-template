@@ -48,12 +48,15 @@ O skill trata TODAS as vagas-alvo com o mesmo cuidado. Nenhuma e primaria ou sec
 
 | Arquetipo | Eixos tematicos | O que estao comprando |
 |-----------|-----------------|----------------------|
-| **AI Platform / LLMOps Engineer** | Avaliacao, Observability, Confiabilidade, Pipelines | Alguem que coloca IA em producao com metricas |
-| **Agentic Workflows / Automation** | HITL, Tooling, Orquestracao, Multi-Agent | Alguem que constroi sistemas de agentes confiaveis |
-| **Technical AI Product Manager** | GenAI/Agents, PRDs, Discovery, Delivery | Alguem que traduz negocios em produtos de IA |
-| **AI Solutions Architect** | Hiperautomacao, Enterprise, Integracoes | Alguem que projeta arquiteturas de IA de ponta a ponta |
-| **AI Forward Deployed Engineer** | Cliente-proximo, entrega rapida, Prototipagem | Alguem que implanta solucoes de IA rapidamente no cliente |
-| **AI Transformation Lead** | Gestao de mudanca, Adocao, Enablement organizacional | Alguem que lidera transformacao de IA em organizacoes |
+| **UX/UI Designer** | Pesquisa de usuario, Design de interface, Prototipagem | Alguem que cria experiencias digitais intuitivas |
+| **Graphic Designer** | Identidade visual, Branding, Design grafico | Alguem que desenvolve identidades visuais impactantes |
+| **Marketing Specialist** | Estrategia de marketing, Analise, Crescimento | Alguem que impulsiona crescimento atraves de marketing |
+| **Art Director** | Direcao artistica, Criatividade, Lideranca visual | Alguem que lidera equipes criativas e define visao artistica |
+| **Copywriter** | Redacao, Mensagens de marca, Storytelling | Alguem que cria narrativas persuasivas e conteudo envolvente |
+| **Social Media Manager** | Redes sociais, Engajamento, Conteudo digital | Alguem que constroi comunidades e impulsiona engajamento |
+| **Digital Artist** | Arte digital, Ilustracao, Motion graphics | Alguem que cria arte digital e animacoes |
+| **Brand Manager** | Gestao de marca, Posicionamento, Estrategia | Alguem que desenvolve e protege identidades de marca |
+| **Creative Director** | Direcao criativa, Inovacao, Lideranca de equipe | Alguem que lidera visao criativa e inova em campanhas |
 
 <!-- [PERSONALIZAR] Adapte os arquetipos acima para suas vagas-alvo.
      Exemplo para engenharia backend:
@@ -68,12 +71,15 @@ O skill trata TODAS as vagas-alvo com o mesmo cuidado. Nenhuma e primaria ou sec
 
 | Se a vaga e... | Enfatizar no candidato... | Fontes de Proof Points |
 |----------------|--------------------------|------------------------|
-| Platform / LLMOps | Experiencia em producao, Observability, Evals, Closed-Loop | article-digest.md + cv.md |
-| Agentic / Automation | Orquestracao multi-agent, HITL, Confiabilidade, Custos | article-digest.md + cv.md |
-| Technical AI PM | Product Discovery, PRDs, Metricas, Gestao de stakeholders | cv.md + article-digest.md |
-| Solutions Architect | Design de sistemas, Integracoes, Enterprise-ready | article-digest.md + cv.md |
-| Forward Deployed Engineer | Entrega rapida, proximo do cliente, Prototipo a producao | cv.md + article-digest.md |
-| AI Transformation Lead | Gestao de mudanca, Enablement de equipe, Adocao | cv.md + article-digest.md |
+| UX/UI Designer | Pesquisa de usuario, Design centrado no usuario, Testes de usabilidade | article-digest.md + cv.md |
+| Graphic Designer | Identidade visual, Branding, Design grafico | article-digest.md + cv.md |
+| Marketing Specialist | Estrategia de marketing, Metricas de performance, Crescimento | cv.md + article-digest.md |
+| Art Director | Lideranca criativa, Visao artistica, Direcao de equipe | article-digest.md + cv.md |
+| Copywriter | Redacao criativa, Mensagens de marca, Storytelling | cv.md + article-digest.md |
+| Social Media Manager | Engajamento digital, Crescimento de comunidade, Conteudo | cv.md + article-digest.md |
+| Digital Artist | Arte digital, Tecnica artistica, Inovacao visual | article-digest.md + cv.md |
+| Brand Manager | Desenvolvimento de marca, Posicionamento, Estrategia | cv.md + article-digest.md |
+| Creative Director | Lideranca criativa, Inovacao, Gestao de equipe | cv.md + article-digest.md |
 
 <!-- [PERSONALIZAR] Mapeie seus projetos/artigos concretos para os arquetipos acima -->
 

@@ -4,37 +4,57 @@ Compact proof points from portfolio projects. Read by career-ops at evaluation t
 
 ---
 
-## FraudShield -- Real-Time Fraud Detection
+## E-commerce Redesign -- Major Retailer Platform
 
-**Hero metrics:** 99.7% precision, 50ms p99 latency, $2M/year fraud prevented
+**Hero metrics:** 45% increase in conversion rate, 30% reduction in bounce rate, 25% decrease in cart abandonment
 
-**Architecture:** Kafka Streams ingestion → real-time feature computation (200+ features, sliding windows) → ensemble model (XGBoost + neural network) → decision engine with configurable thresholds → human review queue for edge cases
+**Process:** User research (interviews + surveys) → journey mapping → wireframing → high-fidelity prototyping → usability testing → visual design → development handoff
 
 **Key decisions:**
-- Chose streaming over batch to catch fraud in real-time (batch had 4-hour delay)
-- Ensemble approach: XGBoost for speed + neural net for complex patterns
-- Built custom feature store for real-time features (Redis-backed, 5ms reads)
+- Mobile-first approach: redesigned for 70% mobile users with touch-friendly interactions
+- Simplified checkout flow: reduced steps from 7 to 3, added progress indicators
+- Trust signals: added security badges, customer reviews, and satisfaction guarantees
 
 **Proof points:**
-- Reduced false positives 60% vs previous rule-based system
-- Handles 10K transactions/second peak load
-- 500+ GitHub stars, adopted by 3 fintech startups
-- Conference talk: "Real-Time ML at Scale" (MLConf 2023)
+- A/B tested 3 design variations, winner outperformed control by 45%
+- User satisfaction score improved from 3.2 to 4.6/5
+- Featured in UX Magazine case study
+- Client reported $2M additional revenue in first quarter
 
 ---
 
-## LLM Eval Toolkit -- Evaluation Framework
+## Financial App Design -- Mobile Banking Experience
 
-**Hero metrics:** 15 built-in metrics, CI/CD integration, used by 200+ developers
+**Hero metrics:** 500K+ downloads, 4.8-star rating, 85% user retention after 6 months
 
-**Architecture:** Pluggable metric system → test suite runner → regression detection → GitHub Actions integration → Slack alerts on regressions
+**Process:** Competitive analysis → user personas → user flows → wireframes → interactive prototypes → visual design → design system creation
 
 **Key decisions:**
-- Metrics as code: each metric is a Python function with clear interface
-- Deterministic testing: seeded prompts + temperature 0 for reproducible evals
-- Cost tracking: each eval run logs token usage and estimated cost
+- Simplified onboarding: reduced from 15 steps to 5 with smart defaults
+- Progressive disclosure: showed advanced features only when needed
+- Accessibility first: WCAG AA compliance, screen reader support
 
 **Proof points:**
-- Caught 3 production regressions before deployment in first month
-- Reduced eval cycle from "vibes check" to structured 15-minute CI run
-- Open source, 200+ weekly active users on PyPI
+- Usability testing showed 90% task completion rate vs 65% for competitor apps
+- App Store featured in "Finance" category for 2 weeks
+- Reduced customer support calls by 40% through self-service design
+- Won "Best Mobile App Design" at Brazilian Design Awards
+
+---
+
+## Design System -- Agency-Wide Component Library
+
+**Hero metrics:** 40% faster development time, 100% design consistency, adopted by 15+ projects
+
+**Components:** 50+ reusable components, 8 color palettes, 6 typography scales, spacing system, interaction patterns
+
+**Key decisions:**
+- Atomic design methodology: atoms → molecules → organisms → templates → pages
+- Design tokens: single source of truth for colors, spacing, typography
+- Documentation: Storybook integration with usage examples and code snippets
+
+**Proof points:**
+- Reduced design handoff time from 2 days to 4 hours
+- Eliminated 95% of design inconsistencies across projects
+- Developer satisfaction improved from 3.1 to 4.7/5
+- Open sourced on GitHub, 300+ stars, forked by 5 agencies
