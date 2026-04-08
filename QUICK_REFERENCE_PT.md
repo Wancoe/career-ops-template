@@ -74,7 +74,7 @@ notepad /tmp/cv-custom.html
 ```
 
 Substitua:
-- `{{NAME}}` → "Sandro Coelho"
+- `{{NAME}}` → "Seu Nome"
 - `{{EMAIL}}` → email@example.com
 - `{{PORTFOLIO_URL}}` → Link de portfólio
 - `{{SUMMARY_TEXT}}` → 3-4 linhas compatíveis com vaga
@@ -85,10 +85,10 @@ Substitua:
 **B. Gerar PDF**
 ```powershell
 # Formato: a4 para Brasil/global, letter para US/Canadá
-node generate-pdf.mjs /tmp/cv-custom.html output/cv-sandro-EMPRESA-DATA.pdf --format=a4
+node generate-pdf.mjs /tmp/cv-custom.html output/cv-company-date.pdf --format=a4
 
 # Exemplo:
-node generate-pdf.mjs /tmp/cv-custom.html output/cv-sandro-ogilvy-2026-04-08.pdf --format=a4
+node generate-pdf.mjs /tmp/cv-custom.html output/cv-exemplo-2026-04-08.pdf --format=a4
 ```
 
 **C. Verificar PDF criado**

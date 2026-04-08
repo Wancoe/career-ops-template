@@ -1,6 +1,6 @@
 # Contributing to Career-Ops
 
-Thanks for your interest in contributing! Career-Ops is built with Claude Code, and you can use it for development too.
+Thanks for your interest in contributing! Career-Ops is a customizable career toolkit that can be used with terminal scripts, local workflows, and optional AI assistance.
 
 ## Before Submitting a PR
 

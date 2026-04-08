@@ -1,6 +1,6 @@
-# Career-Ops CLI Guide (Without Claude Code)
+# Career-Ops CLI Guide
 
-You have **Codex** (code completion) but not **Claude Code** (AI agent). This means you can't use interactive AI commands like `/career-ops evaluate [URL]`. However, **you can use everything else through the terminal** by running Node.js scripts and editing files manually.
+This guide explains how to use Career-Ops manually without an AI agent. Use Node.js scripts, Playwright, and markdown files to evaluate jobs, generate PDFs, and manage your tracker.
 
 ---
 
@@ -124,24 +124,24 @@ Create a tailored CV via HTML, then convert to PDF using the script.
 Use `templates/cv-template.html` as base. Replace placeholders:
 ```html
 <!-- In templates/cv-template.html, replace: -->
-{{NAME}} → "Sandro Coelho"
-{{EMAIL}} → "sandro@example.com"
-{{PORTFOLIO_URL}} → "https://sandrocoelhobr.my.canva.site/"
+{{NAME}} → "Your Name"
+{{EMAIL}} → "you@example.com"
+{{PORTFOLIO_URL}} → "https://your-portfolio.example.com"
 {{PORTFOLIO_DISPLAY}} → "Portfolio"
-{{SUMMARY_TEXT}} → "Diretor cinematográfico com 10+ anos..."
+{{SUMMARY_TEXT}} → "Creative director and audiovisual producer with 10+ years of experience..."
 {{PORTFOLIO_HIGHLIGHTS}} → HTML of 2-3 key projects with metrics
 {{COMPETENCIES}} → Tags like <span class="competency-tag">Audiovisual</span>
 ```
 
-**Step 2: Save as `/tmp/cv-sandro-company.html`**
+**Step 2: Save as `/tmp/cv-custom.html`**
 ```powershell
-notepad /tmp/cv-sandro-company.html
+notepad /tmp/cv-custom.html
 # Paste your customized HTML and save
 ```
 
 **Step 3: Generate PDF**
 ```powershell
-node generate-pdf.mjs /tmp/cv-sandro-company.html output/cv-sandro-company-2026-04-08.pdf --format=a4
+node generate-pdf.mjs /tmp/cv-custom.html output/cv-example-2026-04-08.pdf --format=a4
 ```
 
 **Step 4: Verify**
@@ -245,9 +245,9 @@ node update-system.mjs check
 Edit `config/profile.yml`:
 ```yaml
 candidate:
-  full_name: "Sandro Coelho"
-  email: "sandro.coelho@email.com"
-  portfolio_url: "https://sandrocoelhobr.my.canva.site/"
+  full_name: "Your Name"
+  email: "you@example.com"
+  portfolio_url: "https://your-portfolio.example.com/"
   
 target_roles:
   primary:
@@ -264,7 +264,7 @@ narrative:
 ```
 
 ### Example CV workflow
-1. Create `cv-sandro.md` with full resume
+1. Create `cv-custom.md` with full resume
 2. Create `article-digest.md` with portfolio projects
 3. For each job, copy `templates/cv-template.html`
 4. Edit placeholders with job-specific keywords
@@ -299,7 +299,7 @@ narrative:
   - Portfolio Highlights: 2-3 Rio/brand work projects
   - Competencies: Creative Director, Audiovisual, Brand Strategy
   - Experience: Reorder bullets by relevance
-- Save to `/tmp/cv-sandro-creativo-rio.html`
+- Save to `/tmp/cv-custom.html`
 
 **5. Generate PDF**
 ```powershell
@@ -342,7 +342,7 @@ You have **Codex** (ChatGPT code completion). Use it to:
 
 ---
 
-## Without Claude Code — Summary
+## Summary
 
 | Feature | How to Use |
 |---------|-----------|
@@ -364,6 +364,6 @@ You have **Codex** (ChatGPT code completion). Use it to:
 4. **Create your first evaluation** manually
 5. **Generate a tailored CV** for a test job
 
-You can do **everything** that Claude Code users do — just manually through the terminal instead of through chat commands. It's more work but fully functional!
+You can do **everything** manually through the terminal instead of using chat commands. It's more work but fully functional!
 
 Questions? Check `README.md` or `docs/SETUP.md` for more details.

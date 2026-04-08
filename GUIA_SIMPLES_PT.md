@@ -1,6 +1,6 @@
 # Guia Simples: Como Usar Career-Ops (Sem Comandos Técnicos)
 
-**Olá Sandro!** Este guia é para você usar o sistema Career-Ops **sem precisar digitar comandos no computador**. Tudo será feito clicando em arquivos e pastas, como você já sabe fazer no Windows.
+**Olá!** Este guia mostra como usar o sistema Career-Ops sem precisar digitar comandos no computador. Tudo pode ser feito com arquivos e pastas no Windows.
 
 ---
 
@@ -80,13 +80,13 @@ Você não precisa ser técnico — apenas seguir estes passos!
 
 ```yaml
 candidate:
-  full_name: "Sandro Coelho"
-  email: "sandro.coelho@email.com"
+  full_name: "Seu Nome"
+  email: "voce@example.com"
   phone: "+55-11-99999-9999"
-  location: "Rio de Janeiro, RJ"
-  linkedin: "linkedin.com/in/sandro-coelho"
-  portfolio_url: "https://sandrocoelhobr.my.canva.site/"
-  github: "github.com/sandrocoelho"
+  location: "Sua Cidade, Estado"
+  linkedin: "linkedin.com/in/seu-perfil"
+  portfolio_url: "https://seu-portfolio.exemplo.com"
+  github: "github.com/seu-usuario"
 ```
 
 3. Salve e feche
@@ -96,7 +96,7 @@ candidate:
 2. Escreva seu currículo em formato simples:
 
 ```markdown
-# Sandro Coelho
+# Seu Nome
 
 ## Resumo Profissional
 Diretor cinematográfico com 10+ anos criando conteúdo impactante para marcas.
@@ -259,9 +259,9 @@ Substitua estes códigos:
 
 **Nome e Contato:**
 ```
-{{NAME}} → Sandro Coelho
-{{EMAIL}} → sandro.coelho@email.com
-{{PORTFOLIO_URL}} → https://sandrocoelhobr.my.canva.site/
+{{NAME}} → Seu Nome
+{{EMAIL}} → voce@example.com
+{{PORTFOLIO_URL}} → https://seu-portfolio.exemplo.com
 {{LOCATION}} → Rio de Janeiro, RJ
 ```
 
@@ -299,14 +299,14 @@ Experiência em direção de projetos que alcançaram milhões de visualizaçõe
 
 ### C. Salvar Versão Personalizada
 1. Clique **"Arquivo" → "Salvar Como"**
-2. Salve na pasta `output/` como `cv-sandro-empresa.html`
+2. Salve na pasta `output/` como `cv-custom.html`
 3. Salve e feche
 
 ### D. Gerar PDF
 1. Abra o terminal (Explorador de Arquivos → botão direito → "Abrir PowerShell aqui")
 2. Digite este comando exatamente:
 ```
-node generate-pdf.mjs output/cv-sandro-empresa.html output/cv-sandro-empresa-2026-04-08.pdf --format=a4
+node generate-pdf.mjs output/cv-custom.html output/cv-example-2026-04-08.pdf --format=a4
 ```
 3. Pressione Enter
 4. Espere aparecer "PDF generated"

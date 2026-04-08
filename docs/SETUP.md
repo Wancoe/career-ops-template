@@ -2,8 +2,8 @@
 
 ## Prerequisites
 
-- [Claude Code](https://claude.ai/code) installed and configured
 - Node.js 18+ (for PDF generation and utility scripts)
+- Playwright installed for PDF generation
 - (Optional) Go 1.21+ (for the dashboard TUI)
 
 ## Quick Start (5 steps)
@@ -44,13 +44,16 @@ Edit `portals.yml`:
 
 ### 5. Start using
 
-Open Claude Code in this directory:
+Use the terminal scripts and your markdown files to run the workflow manually:
 
 ```bash
-claude
+node doctor.mjs
+node verify-pipeline.mjs
+node merge-tracker.mjs
+node normalize-statuses.mjs
 ```
 
-Then paste a job offer URL or description. Career-ops will automatically evaluate it, generate a report, create a tailored PDF, and track it.
+Create your CV in `cv.md`, add job descriptions to `jds/`, and write evaluation reports in `reports/.
 
 ## Available Commands
 

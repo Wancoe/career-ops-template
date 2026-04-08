@@ -13,10 +13,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Claude_Code-000?style=flat&logo=anthropic&logoColor=white" alt="Claude Code">
-  <img src="https://img.shields.io/badge/OpenCode-111827?style=flat&logo=terminal&logoColor=white" alt="OpenCode">
-  <img src="https://img.shields.io/badge/Codex_(pronto)-6B7280?style=flat&logo=openai&logoColor=white" alt="Codex">
   <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white" alt="Go">
+  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white" alt="Playwright">
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT">
   <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white" alt="Go">
   <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white" alt="Playwright">
   <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT">
@@ -65,9 +65,9 @@ Construido por alguien que lo uso para evaluar 740+ ofertas, generar 100+ CVs pe
 | **Scripts de negociacion** | Frameworks de negociacion salarial, pushback de descuentos geograficos, leverage de ofertas competidoras |
 | **PDFs ATS** | CVs con keywords inyectados, diseño Space Grotesk + DM Sans |
 | **Scanner de portales** | 45+ empresas pre-configuradas (Anthropic, OpenAI, ElevenLabs, Retool, n8n...) + queries en Ashby, Greenhouse, Lever, Wellfound |
-| **Batch** | Evaluacion en paralelo con workers `claude -p` |
+| **Batch** | Evaluacion en paralelo con scripts y flujos de trabajo locales |
 | **Dashboard TUI** | Terminal UI para navegar, filtrar y ordenar tu pipeline |
-| **Human-in-the-Loop** | La IA evalua y recomienda, tu decides y actuas. El sistema nunca envia una aplicacion -- tu siempre tienes la ultima palabra |
+| **Human-in-the-Loop** | Las recomendaciones son humanas: tu decides si aplicar |
 | **Integridad de pipeline** | Merge automatico, dedup, normalizacion de estados, health checks |
 
 ## Inicio rapido
@@ -88,41 +88,31 @@ cp templates/portals.example.yml portals.yml       # Personalizar empresas
 # 4. Añadir tu CV
 # Crear cv.md en la raiz del proyecto con tu CV en markdown
 
-# 5. Personalizar con Claude
-claude   # Abrir Claude Code en este directorio
-
-# Pidele a Claude que adapte el sistema a ti:
-# "Cambia los arquetipos a roles de backend"
-# "Traduce los modes a ingles"
-# "Añade estas empresas a portals.yml"
-# "Actualiza mi perfil con este CV que te pego"
+# 5. Personalizar el sistema
+Edita `config/profile.yml`, `templates/portals.example.yml`, `modes/_shared.md`, y otros archivos directamente para alinear el proyecto con tus propios objetivos. Esta plantilla funciona sin un agente de IA, usando scripts de terminal y personalizacion manual.
 
 # 6. Usar
-# Pega una URL de oferta o ejecuta /career-ops
+# Crea tu CV y reportes, luego ejecuta los comandos siguientes.
 ```
 
-> **El sistema esta diseñado para que Claude lo personalice.** Modes, arquetipos, scoring, scripts de negociacion -- solo pidelo. Claude lee los mismos archivos que usa, asi que sabe exactamente que editar.
+> **El sistema esta diseñado para que lo personalices tú.** Modes, arquetipos, scoring, scripts de negociacion -- edita los archivos fuente directamente para adaptar el proyecto a tu flujo de trabajo.
 
 Guia completa en [docs/SETUP.md](docs/SETUP.md).
 
-## Uso
+## Uso manual
 
-Career-ops es un unico slash command con multiples modos:
+Utiliza los scripts incluidos y los archivos markdown para evaluar ofertas, generar PDFs y gestionar tu tracker. La asistencia de IA es opcional y no es obligatoria.
 
-```
-/career-ops                → Mostrar todos los comandos
-/career-ops {pega un JD}   → Pipeline completo (evaluar + PDF + tracker)
-/career-ops scan           → Escanear portales
-/career-ops pdf            → Generar CV ATS-optimizado
-/career-ops batch          → Evaluar ofertas en batch
-/career-ops tracker        → Ver estado de aplicaciones
-/career-ops apply          → Rellenar formularios con IA
-/career-ops pipeline       → Procesar URLs pendientes
-/career-ops contacto       → Mensaje LinkedIn outreach
-/career-ops deep           → Research profundo de empresa
+```powershell
+# Revisa el estado del sistema
+node doctor.mjs
+node verify-pipeline.mjs
+node merge-tracker.mjs
+node normalize-statuses.mjs
+node generate-pdf.mjs /tmp/cv-custom.html output/cv-company-2026-04-08.pdf --format=a4
 ```
 
-O simplemente pega una URL o descripcion de oferta -- career-ops la detecta y ejecuta el pipeline completo.
+Para un flujo completo por terminal, consulta [`CLI_GUIDE.md`](CLI_GUIDE.md) o [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md).
 
 ## Como funciona
 
@@ -177,7 +167,7 @@ Features: 6 pestañas de filtro, 4 modos de ordenacion, vista agrupada/plana, pr
 
 ```
 career-ops/
-├── CLAUDE.md                    # Instrucciones del agente
+├── CLAUDE.md                    # Instrucciones opcionales de agente
 ├── cv.md                        # Tu CV (crealo tu)
 ├── article-digest.md            # Tus proof points (opcional)
 ├── config/
@@ -207,25 +197,16 @@ career-ops/
 
 ## Tech Stack
 
-![Claude Code](https://img.shields.io/badge/Claude_Code-000?style=flat&logo=anthropic&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
 ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
 ![Bubble Tea](https://img.shields.io/badge/Bubble_Tea-FF75B5?style=flat&logo=go&logoColor=white)
 
-- **Agente**: Claude Code con skills y modos personalizados
-- **PDF**: Playwright/Puppeteer + template HTML
-- **Scanner**: Playwright + Greenhouse API + WebSearch
-- **Dashboard**: Go + Bubble Tea + Lipgloss (tema Catppuccin Mocha)
+- **Automatizacion**: scripts locales y flujos de trabajo markdown
+- **PDF**: Playwright + template HTML
+- **Scanner**: Playwright + consultas dirigidas
+- **Dashboard**: Go + Bubble Tea + Lipgloss
 - **Datos**: Tablas Markdown + config YAML + ficheros TSV batch
-
-## Sobre el autor
-
-Soy Santiago -- Head of Applied AI, ex-fundador (monte y vendi un negocio que sigue funcionando con mi nombre). Construi career-ops para gestionar mi propia busqueda de empleo. Funciono: lo use para conseguir mi puesto actual.
-
-Mi portfolio y otros proyectos open source → [santifer.io](https://santifer.io)
-
-☕ [Invitame a un cafe](https://buymeacoffee.com/santifer) si career-ops te ayudo en tu busqueda.
 
 ## Documentacion
 

@@ -3,80 +3,61 @@
 # This is the single source of truth for your personal data across all modes.
 
 candidate:
-  full_name: "Sandro Coelho"
-  email: "sandro.coelho@email.com"
+  full_name: "Your Name"
+  email: "you@example.com"
   phone: "+55-11-99999-9999"
-  location: "Rio de Janeiro, RJ"
-  linkedin: "linkedin.com/in/sandro-coelho"
-  portfolio_url: "https://sandrocoelho.com"
-  github: "github.com/sandrocoelho"
-  twitter: "https://x.com/sandrocoelho"
-  # (Optional) Canva resume design ID for visual CV generation via /career-ops pdf.
-  # Find it in your Canva design URL: https://www.canva.com/design/DAxxxxxxx/...
-  # The ID starts with "D" and is 11 characters long.
-  # canva_resume_design_id: "DAxxxxxxxxx"
+  location: "Your City, State"
+  linkedin: "linkedin.com/in/your-profile"
+  portfolio_url: "https://your-portfolio.example.com"
+  github: "github.com/your-username"
+  twitter: "https://x.com/your-handle"
 
 target_roles:
-  # Your North Star roles — what you're optimizing for
   primary:
-    - "Diretor Cinematográfico"
-    - "Produtor Audiovisual"
-    - "Videomaker"
-  # Archetypes help the evaluation system score fit
+    - "Creative Director"
+    - "Audiovisual Producer"
+    - "Visual Storyteller"
   archetypes:
-    - name: "Diretor Cinematográfico"
-      level: "Senior/Pleno"
-      fit: "primary"        # primary = dream role, secondary = good fit, adjacent = stretch
-    - name: "Produtor Audiovisual"
+    - name: "Creative Director"
       level: "Senior"
       fit: "primary"
-    - name: "Videomaker"
+    - name: "Audiovisual Producer"
       level: "Senior"
       fit: "primary"
     - name: "Motion Designer"
       level: "Mid-Senior"
       fit: "secondary"
-    - name: "Criador de Conteúdo"
+    - name: "Content Director"
       level: "Senior"
       fit: "adjacent"
 
 narrative:
-  # Your professional headline (1 line)
-  headline: "Diretor cinematográfico e produtor audiovisual com 10+ anos criando conteúdo impactante"
-  # Your exit story — what makes you unique
-  exit_story: "Especialista em comunicação audiovisual e produção de conteúdo. Combinando direção cinematográfica, produção executiva e motion design para contar histórias que conectam marcas e pessoas."
-  # Your top 3-5 superpowers
+  headline: "Creative director and audiovisual storyteller with experience in branded content and campaigns"
+  exit_story: "I create high-impact audiovisual content that connects brands and audiences through narrative-driven production."
   superpowers:
-    - "Direção cinematográfica e narrativa visual"
-    - "Produção audiovisual e coordenação de equipes"
-    - "Motion design e efeitos visuais"
-    - "Comunicação interna e branding corporativo"
-  # Proof points — projects, articles, case studies with measurable impact
+    - "Creative direction and visual storytelling"
+    - "Audiovisual production and team coordination"
+    - "Motion design and post-production"
+    - "Brand communication and campaign execution"
   proof_points:
-    - name: "Produção de Vídeo Institucional"
-      url: "https://sandrocoelho.com/projeto-institucional"
-      hero_metric: "2M+ visualizações, 95% engajamento"
-    - name: "Campanha Publicitária"
-      url: "https://sandrocoelho.com/campanha-marca"
-      hero_metric: "Aumento de 40% no reconhecimento da marca"
-    - name: "Projeto de Comunicação Interna"
-      url: "https://sandrocoelho.com/comunicacao-interna"
-      hero_metric: "Redução de 60% no turnover de funcionários"
-  # Optional: dashboard/demo URL with credentials
-  # dashboard:
-  #   url: "https://janesmith.dev/demo"
-  #   password: "demo-2026"
+    - name: "Branded Campaign"
+      url: "https://your-portfolio.example.com/project-a"
+      hero_metric: "Increased brand awareness by 40%"
+    - name: "Institutional Video"
+      url: "https://your-portfolio.example.com/project-b"
+      hero_metric: "2M+ views and high employee engagement"
+    - name: "Creative Campaign"
+      url: "https://your-portfolio.example.com/project-c"
+      hero_metric: "Improved internal communication adoption by 30%"
 
 compensation:
-  target_range: "R$ 8.000-12.000"     # Your target total comp
+  target_range: "R$ 8.000-12.000"
   currency: "BRL"
-  minimum: "R$ 6.000"               # Walk-away number
-  location_flexibility: "Remote preferred, open to hybrid in Rio de Janeiro"
+  minimum: "R$ 6.000"
+  location_flexibility: "Remote preferred, open to hybrid arrangements"
 
 location:
   country: "Brazil"
-  city: "Rio de Janeiro"
+  city: "Your City"
   timezone: "BRT"
   visa_status: "Brazilian citizen"
-  # For remote roles outside your country:
-  # onsite_availability: "1 week/month in any city"

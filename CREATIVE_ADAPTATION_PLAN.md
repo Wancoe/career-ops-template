@@ -1,7 +1,7 @@
 # Career-Ops Adaptation Plan: Creative Jobs in Brazil
 
 ## Overview
-Adapt the career-ops repository to support non-tech creative job searches for clients based in Brazil. The system will maintain its core structure while shifting focus from AI/tech roles to creative professions, specifically tailored for audiovisual professionals like Sandro Coelho with expertise in film direction, audiovisual production, videomaking, photography, motion design, and internal communications.
+Adapt the career-ops repository to support non-tech creative job searches for clients in Brazil. The system will maintain its core structure while shifting focus from creative professions, specifically tailored for audiovisual and branded-content roles with expertise in film direction, audiovisual production, videomaking, photography, motion design, and internal communications.
 
 ## Key Changes Required
 
