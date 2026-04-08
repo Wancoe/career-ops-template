@@ -83,7 +83,7 @@ candidate:
   full_name: "Sandro Coelho"
   email: "sandro.coelho@email.com"
   phone: "+55-11-99999-9999"
-  location: "São Paulo, SP"
+  location: "Rio de Janeiro, RJ"
   linkedin: "linkedin.com/in/sandro-coelho"
   portfolio_url: "https://sandrocoelhobr.my.canva.site/"
   github: "github.com/sandrocoelho"
@@ -262,7 +262,7 @@ Substitua estes códigos:
 {{NAME}} → Sandro Coelho
 {{EMAIL}} → sandro.coelho@email.com
 {{PORTFOLIO_URL}} → https://sandrocoelhobr.my.canva.site/
-{{LOCATION}} → São Paulo, SP
+{{LOCATION}} → Rio de Janeiro, RJ
 ```
 
 **Resumo Profissional:**

@@ -205,6 +205,22 @@
     font-weight: 600;
   }
 
+  .portfolio-list {
+    padding-left: 16px;
+    margin-top: 4px;
+  }
+
+  .portfolio-item {
+    font-size: 10.5px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  .portfolio-item strong {
+    font-weight: 600;
+  }
+
   /* === PROJECTS === */
   .project {
     margin-bottom: 10px;
@@ -351,6 +367,14 @@
   <div class="section">
     <div class="section-title">{{SECTION_SUMMARY}}</div>
     <div class="summary-text">{{SUMMARY_TEXT}}</div>
+  </div>
+
+  <!-- PORTFOLIO HIGHLIGHTS -->
+  <div class="section">
+    <div class="section-title">{{SECTION_PORTFOLIO}}</div>
+    <ul class="portfolio-list">
+      {{PORTFOLIO_HIGHLIGHTS}}
+    </ul>
   </div>
 
   <!-- CORE COMPETENCIES -->

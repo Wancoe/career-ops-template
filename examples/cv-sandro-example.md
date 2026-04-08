@@ -1,6 +1,6 @@
 # CV -- Sandro Coelho
 
-**Location:** São Paulo, SP
+**Location:** Rio de Janeiro, RJ
 **Email:** sandro.coelho@email.com
 **LinkedIn:** linkedin.com/in/sandro-coelho
 **Portfolio:** sandrocoelho.com
@@ -12,7 +12,7 @@ Diretor cinematográfico e produtor audiovisual com 10+ anos de experiência em 
 
 ## Work Experience
 
-### Agência Criativa XYZ -- São Paulo, SP
+### Agência Criativa XYZ -- Rio de Janeiro, RJ
 **Diretor Cinematográfico e Produtor Audiovisual**
 2020-2024
 
@@ -22,7 +22,7 @@ Diretor cinematográfico e produtor audiovisual com 10+ anos de experiência em 
 - Implementei processos de produção eficientes, reduzindo tempo de entrega em 30%
 - Trabalhei diretamente com clientes corporativos, entendendo necessidades e traduzindo em soluções audiovisuais impactantes
 
-### Empresa Corporativa ABC -- São Paulo, SP
+### Empresa Corporativa ABC -- Rio de Janeiro, RJ
 **Coordenador de Comunicação Interna**
 2018-2020
 
@@ -32,7 +32,7 @@ Diretor cinematográfico e produtor audiovisual com 10+ anos de experiência em 
 - Reduzi turnover de funcionários em 25% através de campanhas de engajamento visual
 - Gerenciei equipe de 5 profissionais de comunicação e produção
 
-### Freelance -- São Paulo, SP
+### Freelance -- Rio de Janeiro, RJ
 **Videomaker e Motion Designer**
 2015-2018
 

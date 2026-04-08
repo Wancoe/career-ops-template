@@ -11,16 +11,21 @@
    - Resto del mundo → `a4`
 6. Detecta arquetipo del rol → adapta framing
 7. Reescribe Professional Summary inyectando keywords del JD + exit narrative bridge ("Built and sold a business. Now applying systems thinking to [domain del JD].")
-8. Selecciona top 3-4 proyectos más relevantes para la oferta
-9. Reordena bullets de experiencia por relevancia al JD
-10. Construye competency grid desde requisitos del JD (6-8 keyword phrases)
-11. Inyecta keywords naturalmente en logros existentes (NUNCA inventa)
-12. Genera HTML completo desde template + contenido personalizado
-13. Escribe HTML a `/tmp/cv-candidate-{company}.html`
-14. Ejecuta: `node generate-pdf.mjs /tmp/cv-candidate-{company}.html output/cv-candidate-{company}-{YYYY-MM-DD}.pdf --format={letter|a4}`
-15. Reporta: ruta del PDF, nº páginas, % cobertura de keywords
+8. Selecciona 2-3 Portfolio Highlights basados en proyectos, campañas, casos de marca o contenido con métricas visibles y URLs de portafolio.
+9. Selecciona top 3-4 proyectos más relevantes para la oferta
+10. Reordena bullets de experiencia por relevancia al JD
+11. Construye competency grid desde requisitos del JD (6-8 keyword phrases)
+12. Inyecta keywords naturalmente en logros existentes (NUNCA inventa)
+13. Genera HTML completo desde template + contenido personalizado
+14. Escribe HTML a `/tmp/cv-candidate-{company}.html`
+15. Ejecuta: `node generate-pdf.mjs /tmp/cv-candidate-{company}.html output/cv-candidate-{company}-{YYYY-MM-DD}.pdf --format={letter|a4}`
+16. Reporta: ruta del PDF, nº páginas, % cobertura de keywords
 
 ## Reglas ATS (parseo limpio)
+- Usa lenguaje claro y creativo: habla de marcas, campañas, audiencia, engagement, viewership, conversión y reconocimiento.
+- Evita jerga técnica o términos de ingeniería como "pipeline", "ML", "API" o "infraestructura" cuando no son necesarios.
+- Prioriza resultados simples y medibles: "Aumentó el alcance orgánico 40%", "Campaña logró 2M vistas".
+- Mantén frases cortas y directas; evita textos demasiado largos o abstractos.
 
 - Layout single-column (sin sidebars, sin columnas paralelas)
 - Headers estándar: "Professional Summary", "Work Experience", "Education", "Skills", "Certifications", "Projects"
@@ -45,11 +50,12 @@
 
 1. Header (nombre grande, gradiente, contacto, link portfolio)
 2. Professional Summary (3-4 líneas, keyword-dense)
-3. Core Competencies (6-8 keyword phrases en flex-grid)
-4. Work Experience (cronológico inverso)
-5. Projects (top 3-4 más relevantes)
-6. Education & Certifications
-7. Skills (idiomas + técnicos)
+3. Portfolio Highlights (2-3 case studies, campañas, métricas, links)
+4. Core Competencies (6-8 keyword phrases en flex-grid)
+5. Work Experience (cronológico inverso)
+6. Projects (top 3-4 más relevantes)
+7. Education & Certifications
+8. Skills (idiomas + técnicos)
 
 ## Estrategia de keyword injection (ético, basado en verdad)
 
@@ -77,6 +83,8 @@ Usar el template en `cv-template.html`. Reemplazar los placeholders `{{...}}` co
 | `{{LOCATION}}` | [from profile.yml] |
 | `{{SECTION_SUMMARY}}` | Professional Summary / Resumen Profesional |
 | `{{SUMMARY_TEXT}}` | Summary personalizado con keywords |
+| `{{SECTION_PORTFOLIO}}` | Portfolio Highlights / Destaques do Portfólio |
+| `{{PORTFOLIO_HIGHLIGHTS}}` | Lista de 2-3 proyectos clave con impacto, métricas y URLs |
 | `{{SECTION_COMPETENCIES}}` | Core Competencies / Competencias Core |
 | `{{COMPETENCIES}}` | `<span class="competency-tag">keyword</span>` × 6-8 |
 | `{{SECTION_EXPERIENCE}}` | Work Experience / Experiencia Laboral |

@@ -6,7 +6,7 @@ candidate:
   full_name: "Sandro Coelho"
   email: "sandro.coelho@email.com"
   phone: "+55-11-99999-9999"
-  location: "São Paulo, SP"
+  location: "Rio de Janeiro, RJ"
   linkedin: "linkedin.com/in/sandro-coelho"
   portfolio_url: "https://sandrocoelho.com"
   github: "github.com/sandrocoelho"
@@ -71,11 +71,11 @@ compensation:
   target_range: "R$ 8.000-12.000"     # Your target total comp
   currency: "BRL"
   minimum: "R$ 6.000"               # Walk-away number
-  location_flexibility: "Remote preferred, open to hybrid in São Paulo"
+  location_flexibility: "Remote preferred, open to hybrid in Rio de Janeiro"
 
 location:
   country: "Brazil"
-  city: "São Paulo"
+  city: "Rio de Janeiro"
   timezone: "BRT"
   visa_status: "Brazilian citizen"
   # For remote roles outside your country:

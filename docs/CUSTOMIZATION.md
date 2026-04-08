@@ -40,6 +40,8 @@ The HTML template uses these design tokens:
 - **Colors**: Cyan primary (`hsl(187,74%,32%)`) + Purple accent (`hsl(270,70%,45%)`)
 - **Layout**: Single-column, ATS-optimized
 
+The template now also supports a **Portfolio Highlights** section to feature brand work, campaigns, content cases, and portfolio URLs.
+
 To customize fonts/colors, edit the CSS in the template. Update font files in `fonts/` if switching fonts.
 
 ## Negotiation Scripts (modes/_shared.md)
