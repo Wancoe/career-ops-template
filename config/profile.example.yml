@@ -3,14 +3,14 @@
 # This is the single source of truth for your personal data across all modes.
 
 candidate:
-  full_name: "Ana Silva"
-  email: "ana.silva@email.com"
+  full_name: "Sandro Coelho"
+  email: "sandro.coelho@email.com"
   phone: "+55-11-99999-9999"
   location: "São Paulo, SP"
-  linkedin: "linkedin.com/in/anasilva"
-  portfolio_url: "https://anasilva.design"
-  github: "github.com/anasilva"
-  twitter: "https://x.com/anasilva"
+  linkedin: "linkedin.com/in/sandro-coelho"
+  portfolio_url: "https://sandrocoelho.com"
+  github: "github.com/sandrocoelho"
+  twitter: "https://x.com/sandrocoelho"
   # (Optional) Canva resume design ID for visual CV generation via /career-ops pdf.
   # Find it in your Canva design URL: https://www.canva.com/design/DAxxxxxxx/...
   # The ID starts with "D" and is 11 characters long.
@@ -19,41 +19,49 @@ candidate:
 target_roles:
   # Your North Star roles — what you're optimizing for
   primary:
-    - "UX/UI Designer"
-    - "Senior Graphic Designer"
+    - "Diretor Cinematográfico"
+    - "Produtor Audiovisual"
+    - "Videomaker"
   # Archetypes help the evaluation system score fit
   archetypes:
-    - name: "UX/UI Designer"
+    - name: "Diretor Cinematográfico"
       level: "Senior/Pleno"
       fit: "primary"        # primary = dream role, secondary = good fit, adjacent = stretch
-    - name: "Graphic Designer"
+    - name: "Produtor Audiovisual"
       level: "Senior"
       fit: "primary"
-    - name: "Art Director"
+    - name: "Videomaker"
+      level: "Senior"
+      fit: "primary"
+    - name: "Motion Designer"
       level: "Mid-Senior"
       fit: "secondary"
-    - name: "Creative Director"
+    - name: "Criador de Conteúdo"
       level: "Senior"
       fit: "adjacent"
 
 narrative:
   # Your professional headline (1 line)
-  headline: "UX/UI Designer with 8+ years creating digital experiences"
+  headline: "Diretor cinematográfico e produtor audiovisual com 10+ anos criando conteúdo impactante"
   # Your exit story — what makes you unique
-  exit_story: "Led design teams at top Brazilian agencies. Now focused on user-centered design for digital products."
+  exit_story: "Especialista em comunicação audiovisual e produção de conteúdo. Combinando direção cinematográfica, produção executiva e motion design para contar histórias que conectam marcas e pessoas."
   # Your top 3-5 superpowers
   superpowers:
-    - "User research and usability testing"
-    - "Visual design and branding"
-    - "Design system creation"
+    - "Direção cinematográfica e narrativa visual"
+    - "Produção audiovisual e coordenação de equipes"
+    - "Motion design e efeitos visuais"
+    - "Comunicação interna e branding corporativo"
   # Proof points — projects, articles, case studies with measurable impact
   proof_points:
-    - name: "E-commerce Redesign"
-      url: "https://anasilva.design/ecommerce-case"
-      hero_metric: "Increased conversion rate 45%"
-    - name: "Brand Identity Project"
-      url: "https://anasilva.design/brand-identity"
-      hero_metric: "Client retention improved 60%"
+    - name: "Produção de Vídeo Institucional"
+      url: "https://sandrocoelho.com/projeto-institucional"
+      hero_metric: "2M+ visualizações, 95% engajamento"
+    - name: "Campanha Publicitária"
+      url: "https://sandrocoelho.com/campanha-marca"
+      hero_metric: "Aumento de 40% no reconhecimento da marca"
+    - name: "Projeto de Comunicação Interna"
+      url: "https://sandrocoelho.com/comunicacao-interna"
+      hero_metric: "Redução de 60% no turnover de funcionários"
   # Optional: dashboard/demo URL with credentials
   # dashboard:
   #   url: "https://janesmith.dev/demo"

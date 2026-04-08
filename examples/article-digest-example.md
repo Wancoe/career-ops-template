@@ -4,57 +4,72 @@ Compact proof points from portfolio projects. Read by career-ops at evaluation t
 
 ---
 
-## E-commerce Redesign -- Major Retailer Platform
+## Campanha Publicitária Nacional -- Produção Audiovisual
 
-**Hero metrics:** 45% increase in conversion rate, 30% reduction in bounce rate, 25% decrease in cart abandonment
+**Hero metrics:** 2M+ visualizações no YouTube, 95% taxa de engajamento, aumento de 40% no reconhecimento da marca
 
-**Process:** User research (interviews + surveys) → journey mapping → wireframing → high-fidelity prototyping → usability testing → visual design → development handoff
+**Processo:** Pesquisa de mercado → desenvolvimento de conceito → roteiro → pré-produção → filmagem → edição → pós-produção
 
-**Key decisions:**
-- Mobile-first approach: redesigned for 70% mobile users with touch-friendly interactions
-- Simplified checkout flow: reduced steps from 7 to 3, added progress indicators
-- Trust signals: added security badges, customer reviews, and satisfaction guarantees
+**Decisões chave:**
+- Direção cinematográfica focada em storytelling emocional para conectar com o público-alvo
+- Uso estratégico de motion graphics para explicar produto complexo
+- Coordenação de equipe de 15 profissionais em produção de 3 semanas
 
 **Proof points:**
-- A/B tested 3 design variations, winner outperformed control by 45%
-- User satisfaction score improved from 3.2 to 4.6/5
-- Featured in UX Magazine case study
-- Client reported $2M additional revenue in first quarter
+- Vídeo viralizou nas redes sociais, gerando 500K+ compartilhamentos
+- Cliente reportou aumento de 40% nas vendas do produto em destaque
+- Prêmio de Melhor Campanha Publicitária no Festival Brasileiro de Propaganda
 
 ---
 
-## Financial App Design -- Mobile Banking Experience
+## Vídeo Institucional Corporativo -- Comunicação Interna
 
-**Hero metrics:** 500K+ downloads, 4.8-star rating, 85% user retention after 6 months
+**Hero metrics:** 60% aumento na percepção positiva da marca entre funcionários, redução de 25% no turnover
 
-**Process:** Competitive analysis → user personas → user flows → wireframes → interactive prototypes → visual design → design system creation
+**Processo:** Entrevista com liderança → roteiro corporativo → produção audiovisual → distribuição interna → medição de engajamento
 
-**Key decisions:**
-- Simplified onboarding: reduced from 15 steps to 5 with smart defaults
-- Progressive disclosure: showed advanced features only when needed
-- Accessibility first: WCAG AA compliance, screen reader support
+**Decisões chave:**
+- Linguagem visual alinhada com valores da empresa
+- Conteúdo dividido em série de vídeos curtos para intranet
+- Integração com estratégia de comunicação interna existente
 
 **Proof points:**
-- Usability testing showed 90% task completion rate vs 65% for competitor apps
-- App Store featured in "Finance" category for 2 weeks
-- Reduced customer support calls by 40% through self-service design
-- Won "Best Mobile App Design" at Brazilian Design Awards
+- 95% dos funcionários assistiram aos vídeos institucionais
+- Pesquisa interna mostrou melhoria de 60% na percepção da cultura organizacional
+- Redução mensurável no turnover após implementação da campanha
 
 ---
 
-## Design System -- Agency-Wide Component Library
+## Documentário Cultural -- Direção Cinematográfica
 
-**Hero metrics:** 40% faster development time, 100% design consistency, adopted by 15+ projects
+**Hero metrics:** Prêmio em festival nacional, 100K+ visualizações, cobertura em 5 veículos de imprensa
 
-**Components:** 50+ reusable components, 8 color palettes, 6 typography scales, spacing system, interaction patterns
+**Processo:** Pesquisa documental → roteiro → captação de imagens → entrevistas → montagem → trilha sonora
 
-**Key decisions:**
-- Atomic design methodology: atoms → molecules → organisms → templates → pages
-- Design tokens: single source of truth for colors, spacing, typography
-- Documentation: Storybook integration with usage examples and code snippets
+**Decisões chave:**
+- Estilo cinematográfico documental observacional para autenticidade
+- Fotografia em 4K para preservação de qualidade
+- Montagem não-linear para criar narrativa emocional
 
 **Proof points:**
-- Reduced design handoff time from 2 days to 4 hours
-- Eliminated 95% of design inconsistencies across projects
-- Developer satisfaction improved from 3.1 to 4.7/5
-- Open sourced on GitHub, 300+ stars, forked by 5 agencies
+- Venceu categoria de Melhor Documentário no Festival de Cinema Brasileiro
+- Distribuição em plataforma de streaming cultural
+- Gerou discussão nacional sobre arte urbana na cidade
+
+---
+
+## Motion Graphics para Startup -- Produção Digital
+
+**Hero metrics:** 80% aumento no engajamento do site, redução de 50% no bounce rate da landing page
+
+**Processo:** Briefing criativo → storyboard → animação → integração web → testes de performance
+
+**Decisões chave:**
+- Motion design minimalista para explicar produto SaaS complexo
+- Otimização para web com arquivos leves
+- Integração com identidade visual da startup
+
+**Proof points:**
+- Vídeos explicativos aumentaram conversões em 80%
+- Cliente reportou melhoria significativa na compreensão do produto
+- Reutilização do mesmo motion design em múltiplas campanhas

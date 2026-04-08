@@ -48,15 +48,16 @@ O skill trata TODAS as vagas-alvo com o mesmo cuidado. Nenhuma e primaria ou sec
 
 | Arquetipo | Eixos tematicos | O que estao comprando |
 |-----------|-----------------|----------------------|
-| **UX/UI Designer** | Pesquisa de usuario, Design de interface, Prototipagem | Alguem que cria experiencias digitais intuitivas |
-| **Graphic Designer** | Identidade visual, Branding, Design grafico | Alguem que desenvolve identidades visuais impactantes |
-| **Marketing Specialist** | Estrategia de marketing, Analise, Crescimento | Alguem que impulsiona crescimento atraves de marketing |
-| **Art Director** | Direcao artistica, Criatividade, Lideranca visual | Alguem que lidera equipes criativas e define visao artistica |
-| **Copywriter** | Redacao, Mensagens de marca, Storytelling | Alguem que cria narrativas persuasivas e conteudo envolvente |
-| **Social Media Manager** | Redes sociais, Engajamento, Conteudo digital | Alguem que constroi comunidades e impulsiona engajamento |
-| **Digital Artist** | Arte digital, Ilustracao, Motion graphics | Alguem que cria arte digital e animacoes |
-| **Brand Manager** | Gestao de marca, Posicionamento, Estrategia | Alguem que desenvolve e protege identidades de marca |
-| **Creative Director** | Direcao criativa, Inovacao, Lideranca de equipe | Alguem que lidera visao criativa e inova em campanhas |
+| **Diretor Cinematográfico** | Direção de cena, Linguagem audiovisual, Roteiro | Alguem que conta histórias através de imagens |
+| **Produtor Audiovisual** | Coordenação de produção, Orçamento, Logística | Alguem que organiza e executa produções audiovisuais |
+| **Videomaker** | Produção de vídeo, Edição, Storytelling visual | Alguem que cria conteúdo audiovisual envolvente |
+| **Motion Designer** | Animação, Motion graphics, Efeitos visuais | Alguem que dá vida a ideias através de movimento |
+| **Fotógrafo** | Fotografia artística, Ensaios, Produção fotográfica | Alguem que captura momentos e conta histórias visuais |
+| **Criador de Conteúdo** | Conteúdo digital, Redes sociais, Estratégia de comunicação | Alguem que desenvolve narrativas para plataformas digitais |
+| **Comunicação Interna** | Comunicação corporativa, Intranet, Branding interno | Alguem que conecta empresa e colaboradores |
+| **Diretor Criativo** | Liderança criativa, Inovação, Visão estratégica | Alguem que lidera equipes e define direção criativa |
+| **Diretor de Arte** | Conceito visual, Estética, Direção artística | Alguem que define a linguagem visual de projetos |
+| **Produtor Multimídia** | Produção digital, Interativo, Audiovisual | Alguem que integra múltiplas mídias em experiências |
 
 <!-- [PERSONALIZAR] Adapte os arquetipos acima para suas vagas-alvo.
      Exemplo para engenharia backend:
@@ -71,15 +72,16 @@ O skill trata TODAS as vagas-alvo com o mesmo cuidado. Nenhuma e primaria ou sec
 
 | Se a vaga e... | Enfatizar no candidato... | Fontes de Proof Points |
 |----------------|--------------------------|------------------------|
-| UX/UI Designer | Pesquisa de usuario, Design centrado no usuario, Testes de usabilidade | article-digest.md + cv.md |
-| Graphic Designer | Identidade visual, Branding, Design grafico | article-digest.md + cv.md |
-| Marketing Specialist | Estrategia de marketing, Metricas de performance, Crescimento | cv.md + article-digest.md |
-| Art Director | Lideranca criativa, Visao artistica, Direcao de equipe | article-digest.md + cv.md |
-| Copywriter | Redacao criativa, Mensagens de marca, Storytelling | cv.md + article-digest.md |
-| Social Media Manager | Engajamento digital, Crescimento de comunidade, Conteudo | cv.md + article-digest.md |
-| Digital Artist | Arte digital, Tecnica artistica, Inovacao visual | article-digest.md + cv.md |
-| Brand Manager | Desenvolvimento de marca, Posicionamento, Estrategia | cv.md + article-digest.md |
-| Creative Director | Lideranca criativa, Inovacao, Gestao de equipe | cv.md + article-digest.md |
+| Diretor Cinematográfico | Linguagem audiovisual, Direção de cena, Storytelling visual | article-digest.md + cv.md |
+| Produtor Audiovisual | Coordenação de produção, Gestão de orçamento, Logística | article-digest.md + cv.md |
+| Videomaker | Produção de vídeo, Edição, Storytelling audiovisual | cv.md + article-digest.md |
+| Motion Designer | Animação, Motion graphics, Efeitos visuais | article-digest.md + cv.md |
+| Fotógrafo | Fotografia artística, Produção fotográfica, Técnica visual | cv.md + article-digest.md |
+| Criador de Conteúdo | Estratégia de conteúdo, Redes sociais, Engajamento | cv.md + article-digest.md |
+| Comunicação Interna | Comunicação corporativa, Branding interno, Intranet | cv.md + article-digest.md |
+| Diretor Criativo | Liderança criativa, Inovação, Visão estratégica | cv.md + article-digest.md |
+| Diretor de Arte | Conceito visual, Estética, Direção artística | article-digest.md + cv.md |
+| Produtor Multimídia | Produção digital, Interativo, Integração multimídia | cv.md + article-digest.md |
 
 <!-- [PERSONALIZAR] Mapeie seus projetos/artigos concretos para os arquetipos acima -->
 

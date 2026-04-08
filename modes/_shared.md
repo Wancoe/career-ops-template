@@ -48,16 +48,16 @@ Classify every offer into one of these types (or hybrid of 2):
 
 | Archetype | Key signals in JD |
 |-----------|-------------------|
-| Graphic Designer | "design", "visual", "branding", "layout", "typography", "Adobe", "Figma" |
-| Content Creator | "content", "social media", "copywriting", "storytelling", "blog", "video" |
-| Marketing Specialist | "marketing", "campaign", "strategy", "analytics", "SEO", "PPC", "growth" |
-| UX/UI Designer | "UX", "UI", "user experience", "interface", "prototyping", "usability" |
-| Art Director | "art direction", "creative direction", "visual strategy", "brand identity" |
-| Copywriter | "copy", "writing", "advertising", "brand voice", "messaging", "content strategy" |
-| Social Media Manager | "social media", "community", "engagement", "influencer", "content calendar" |
-| Digital Artist | "digital art", "illustration", "animation", "3D", "motion graphics" |
-| Brand Manager | "brand management", "brand strategy", "identity", "positioning", "market research" |
-| Creative Director | "creative direction", "leadership", "team management", "portfolio review", "campaign development" |
+| Film Director | "direção", "cinematografia", "roteiro", "produção audiovisual", "direção de cena" |
+| Audiovisual Producer | "produção", "produtor", "orçamento", "coordenação", "produção executiva" |
+| Video Producer | "videomaker", "produção de vídeo", "edição", "motion graphics", "after effects" |
+| Motion Designer | "motion design", "animação", "after effects", "cinema 4d", "motion graphics" |
+| Photographer | "fotografia", "fotógrafo", "ensaios", "editorial", "produção fotográfica" |
+| Content Creator | "conteúdo", "social media", "storytelling", "produção de conteúdo" |
+| Internal Communications | "comunicação interna", "intranet", "comunicação corporativa", "branding interno" |
+| Creative Director | "direção criativa", "campanhas", "inovação", "liderança criativa" |
+| Art Director | "direção de arte", "visual", "estética", "conceito visual" |
+| Multimedia Producer | "multimídia", "audiovisual", "digital", "interativo", "produção multimídia" |
 
 After detecting archetype, read `modes/_profile.md` for the user's specific framing and proof points for that archetype.
 
