@@ -3,7 +3,7 @@
 [English](README.md) | [Português](README.pt.md)
 
 <p align="center">
-  <a href="https://github.com/Wancoe/career-ops-template"><img src="docs/hero-banner.jpg" alt="Career-Ops — Career management toolkit" width="800"></a>
+  <a href="https://github.com/Wancoe/career-ops-template"><img src="docs/career-ops-banner.png" alt="Career-Ops — Career management toolkit" width="800"></a>
 </p>
 
 <p align="center">

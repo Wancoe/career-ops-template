@@ -3,7 +3,7 @@
 [English](README.md) | [Português](README.pt.md)
 
 <p align="center">
-  <a href="https://github.com/Wancoe/career-ops-template"><img src="docs/hero-banner.jpg" alt="Career-Ops — Ferramenta de carreira" width="800"></a>
+  <a href="https://github.com/Wancoe/career-ops-template"><img src="docs/career-ops-banner.png" alt="Career-Ops — Ferramenta de carreira" width="800"></a>
 </p>
 
 Career-Ops é uma coleção de ferramentas locais para gerenciar a busca por emprego: avaliar vagas, gerar currículos em PDF personalizados, escanear portais de emprego e controlar o pipeline de candidaturas.
