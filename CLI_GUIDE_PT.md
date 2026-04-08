@@ -1,5 +1,7 @@
 # Guia CLI Career-Ops (Sem Claude Code)
 
+Este projeto está publicado em: https://github.com/Wancoe/career-ops-template
+
 Você tem **Codex** (conclusão de código) mas não tem **Claude Code** (agente IA). Isso significa que você não pode usar comandos interativos como `/career-ops avaliar [URL]`. Porém, **você pode usar tudo pelo terminal** executando scripts Node.js e editando arquivos manualmente.
 
 ---

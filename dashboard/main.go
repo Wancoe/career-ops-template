@@ -9,9 +9,9 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 
-	"github.com/santifer/career-ops/dashboard/internal/data"
-	"github.com/santifer/career-ops/dashboard/internal/theme"
-	"github.com/santifer/career-ops/dashboard/internal/ui/screens"
+	"github.com/Wancoe/career-ops-template/dashboard/internal/data"
+	"github.com/Wancoe/career-ops-template/dashboard/internal/theme"
+	"github.com/Wancoe/career-ops-template/dashboard/internal/ui/screens"
 )
 
 type viewState int

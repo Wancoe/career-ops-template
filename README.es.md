@@ -74,8 +74,8 @@ Construido por alguien que lo uso para evaluar 740+ ofertas, generar 100+ CVs pe
 
 ```bash
 # 1. Clonar e instalar
-git clone https://github.com/santifer/career-ops.git
-cd career-ops && npm install
+git clone https://github.com/Wancoe/career-ops-template.git
+cd career-ops-template && npm install
 npx playwright install chromium   # Necesario para generar PDFs
 
 # 2. Verificar setup
@@ -241,9 +241,9 @@ Mi portfolio y otros proyectos open source → [santifer.io](https://santifer.io
 
 <a href="https://www.star-history.com/?repos=santifer%2Fcareer-ops&type=timeline&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=santifer/career-ops&type=timeline&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=santifer/career-ops&type=timeline&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=santifer/career-ops&type=timeline&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Wancoe/career-ops-template&type=timeline&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Wancoe/career-ops-template&type=timeline&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Wancoe/career-ops-template&type=timeline&legend=top-left" />
  </picture>
 </a>
 
