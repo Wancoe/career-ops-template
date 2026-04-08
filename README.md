@@ -3,13 +3,11 @@
 [English](README.md) | [Português](README.pt.md)
 
 <p align="center">
-  <a href="https://x.com/santifer"><img src="docs/hero-banner.jpg" alt="Career-Ops — Multi-Agent Job Search System" width="800"></a>
+  <a href="https://github.com/Wancoe/career-ops-template"><img src="docs/hero-banner.jpg" alt="Career-Ops — Career management toolkit" width="800"></a>
 </p>
 
 <p align="center">
-  <em>I spent months applying to jobs the hard way. So I engineered the system I wish I had.</em><br>
-  Companies use AI to filter candidates. <strong>I gave candidates AI to <em>choose</em> companies.</strong><br>
-  <em>Now it's open source.</em>
+  Career-Ops is a local career workflow toolkit for evaluating jobs, generating tailored CV PDFs, scanning job boards, and tracking applications through terminal scripts and markdown files.
 </p>
 
 <p align="center">
@@ -17,7 +15,6 @@
   <img src="https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white" alt="Go">
   <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white" alt="Playwright">
   <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT">
-  <a href="https://discord.gg/8pRpHETxa4"><img src="https://img.shields.io/badge/Discord-5865F2?style=flat&logo=discord&logoColor=white" alt="Discord"></a>
   <br>
   <img src="https://img.shields.io/badge/EN-blue?style=flat" alt="EN">
   <img src="https://img.shields.io/badge/PT--BR-green?style=flat" alt="PT-BR">
@@ -25,224 +22,113 @@
 
 ---
 
-<p align="center">
-  <img src="docs/demo.gif" alt="Career-Ops Demo" width="800">
-</p>
+## What is Career-Ops?
 
-<p align="center"><strong>740+ job listings evaluated · 100+ personalized CVs · 1 dream role landed</strong></p>
+Career-Ops is a standalone repository for managing a career search workflow. It helps you:
 
-<p align="center"><a href="https://discord.gg/8pRpHETxa4"><img src="https://img.shields.io/badge/Join_the_community-Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a></p>
+- Evaluate job opportunities with structured scoring
+- Create tailored CV PDFs from HTML templates
+- Scan configured job portals and collect job links
+- Track applications and evaluation notes in Markdown
+- Run batch workflows and integrity checks locally
 
-## What Is This
-
-Career-Ops is a customizable, open-source career toolkit for evaluating job offers, generating tailored PDFs, scanning portals, and tracking applications. It is designed to work manually through terminal scripts and markdown files; external AI assistance is optional but not required.
-
-- **Evaluates offers** with a structured A-F scoring system (10 weighted dimensions)
-- **Generates tailored PDFs** -- ATS-optimized CVs customized per job description
-- **Scans portals** automatically with Playwright and targeted search queries
-- **Processes in batch** with local worker scripts and review workflows
-- **Tracks everything** in a single source of truth with integrity checks
-
-> **Important: This is NOT a spray-and-pray tool.** Career-Ops is a filter -- it helps you find the few offers worth your time out of hundreds. The system strongly recommends against applying to anything scoring below 4.0/5. Your time is valuable, and so is the recruiter's. Always review before submitting.
-
-> **Heads up: the first evaluations won't be great.** The system doesn't know you yet. Feed it context -- your CV, your career story, your proof points, your preferences, what you're good at, what you want to avoid. The more you nurture it, the better it gets. Think of it as onboarding a new recruiter: the first week they need to learn about you, then they become invaluable.
+This version is maintained independently in `Wancoe/career-ops-template` and is intended for local use without needing an external hosted service.
 
 ## Features
 
-| Feature | Description |
-|---------|-------------|
-| **Auto-Pipeline** | Paste a URL, get a full evaluation + PDF + tracker entry |
-| **6-Block Evaluation** | Role summary, CV match, level strategy, comp research, personalization, interview prep (STAR+R) |
-| **Interview Story Bank** | Accumulates STAR+Reflection stories across evaluations -- 5-10 master stories that answer any behavioral question |
-| **Negotiation Scripts** | Salary negotiation frameworks, geographic discount pushback, competing offer leverage |
-| **ATS PDF Generation** | Keyword-injected CVs with Space Grotesk + DM Sans design |
-| **Portal Scanner** | 45+ companies pre-configured (Anthropic, OpenAI, ElevenLabs, Retool, n8n...) + custom queries across Ashby, Greenhouse, Lever, Wellfound |
-| **Batch Processing** | Parallel evaluation with local worker scripts |
-| **Dashboard TUI** | Terminal UI to browse, filter, and sort your pipeline |
-| **Human-in-the-Loop** | AI evaluates and recommends, you decide and act. The system never submits an application -- you always have the final call |
-| **Pipeline Integrity** | Automated merge, dedup, status normalization, health checks |
+- **Job evaluation** using a structured multi-block framework
+- **PDF generation** from `templates/cv-template.html`
+- **Portal scanning** driven by `templates/portals.example.yml`
+- **Tracker management** with merge, dedup, and validation scripts
+- **Batch workflows** for local report processing
+- **Dashboard support** with a Go-based terminal UI
+- **Local-first**: all workflow data stays in your repository
 
-## Quick Start
+## Quick start
 
 ```bash
-# 1. Clone and install
+# Clone the repository
 git clone https://github.com/Wancoe/career-ops-template.git
-cd career-ops-template && npm install
-npx playwright install chromium   # Required for PDF generation
+cd career-ops-template
+npm install
+npx playwright install chromium
 
-# 2. Check setup
-npm run doctor                     # Validates all prerequisites
+# Configure the project
+cp config/profile.example.yml config/profile.yml
+cp templates/portals.example.yml portals.yml
 
-# 3. Configure
-cp config/profile.example.yml config/profile.yml  # Edit with your details
-cp templates/portals.example.yml portals.yml       # Customize companies
+# Create your files
+# - cv.md: your resume in Markdown
+# - article-digest.md: optional project and metrics notes
 
-# 4. Add your CV
-# Create cv.md in the project root with your CV in markdown
-
-# 5. Personalize the system
-Edit `config/profile.yml`, `templates/portals.example.yml`, `modes/_shared.md`, and other files directly to match your own career goals. This repository is designed to work without an AI agent, using terminal scripts and manual customization.
-
-# 6. Start using
-# Create your CV and reports, then run the commands below.
+# Verify setup
+npm run doctor
 ```
 
-> **The system is designed to be customized by you.** Modes, archetypes, scoring weights, negotiation scripts -- edit the source files directly to make the project your own.
+## Basic usage
 
-See [docs/SETUP.md](docs/SETUP.md) for the full setup guide.
+Use the repository scripts and guides to manage evaluations, PDF generation, and tracking.
 
-## Usage
+### Evaluate jobs
+- Read `modes/oferta.md` for evaluation guidance
+- Add reports in `reports/`
+- Track scores and status in `data/applications.md`
 
-## Manual Workflow
-Use the built-in scripts and markdown files to evaluate offers, generate PDFs, and manage your tracker. External AI helpers are optional, but not required.
-
-```powershell
-# Check system health
-node doctor.mjs                    # System health check
-node verify-pipeline.mjs           # Verify tracker integrity
-node merge-tracker.mjs             # Merge batch additions
-node normalize-statuses.mjs        # Fix status formatting
-node generate-pdf.mjs /tmp/cv-custom.html output/cv-company-2026-04-08.pdf --format=a4
-```
-
-For a full terminal workflow, see [`CLI_GUIDE.md`](CLI_GUIDE.md) or [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md).
-# Generate a tailored PDF
-node generate-pdf.mjs input.html output.pdf --format=a4
-
-# Check for updates
-node update-system.mjs check
-
-# Manage tracker
-node normalize-statuses.mjs        # Fix status formatting
-node dedup-tracker.mjs             # Remove duplicates
-```
-
-**See [`CLI_GUIDE.md`](CLI_GUIDE.md) for the complete terminal-based workflow** (job evaluation, CV tailoring, PDF generation, tracker management) or the quick reference: [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md)
-
-## How It Works
-
-```
-You paste a job URL or description
-        │
-        ▼
-┌──────────────────┐
-│  Archetype       │  Classifies: LLMOps / Agentic / PM / SA / FDE / Transformation
-│  Detection       │
-└────────┬─────────┘
-         │
-┌────────▼─────────┐
-│  A-F Evaluation  │  Match, gaps, comp research, STAR stories
-│  (reads cv.md)   │
-└────────┬─────────┘
-         │
-    ┌────┼────┐
-    ▼    ▼    ▼
- Report  PDF  Tracker
-  .md   .pdf   .tsv
-```
-
-## Pre-configured Portals
-
-The scanner comes with **45+ companies** ready to scan and **19 search queries** across major job boards. Copy `templates/portals.example.yml` to `portals.yml` and add your own:
-
-**AI Labs:** Anthropic, OpenAI, Mistral, Cohere, LangChain, Pinecone
-**Voice AI:** ElevenLabs, PolyAI, Parloa, Hume AI, Deepgram, Vapi, Bland AI
-**AI Platforms:** Retool, Airtable, Vercel, Temporal, Glean, Arize AI
-**Contact Center:** Ada, LivePerson, Sierra, Decagon, Talkdesk, Genesys
-**Enterprise:** Salesforce, Twilio, Gong, Dialpad
-**LLMOps:** Langfuse, Weights & Biases, Lindy, Cognigy, Speechmatics
-**Automation:** n8n, Zapier, Make.com
-**European:** Factorial, Attio, Tinybird, Clarity AI, Travelperk
-
-**Job boards searched:** Ashby, Greenhouse, Lever, Wellfound, Workable, RemoteFront
-
-## Dashboard TUI
-
-The built-in terminal dashboard lets you browse your pipeline visually:
+### Generate tailored PDFs
+- Customize `templates/cv-template.html`
+- Run:
 
 ```bash
-cd dashboard
-go build -o career-dashboard .
-./career-dashboard --path ..
+node generate-pdf.mjs /tmp/cv-custom.html output/cv-custom-2026-04-08.pdf --format=a4
 ```
 
-Features: 6 filter tabs, 4 sort modes, grouped/flat view, lazy-loaded previews, inline status changes.
+### Manage the tracker
 
-## Project Structure
+```bash
+node merge-tracker.mjs
+node normalize-statuses.mjs
+node dedup-tracker.mjs
+node verify-pipeline.mjs
+```
+
+### Scan portals
+
+Edit `portals.yml` with your target companies and search queries.
+
+## Documentation
+
+- Full CLI guide: [`CLI_GUIDE.md`](CLI_GUIDE.md)
+- Quick reference: [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md)
+- Portuguese CLI guide: [`CLI_GUIDE_PT.md`](CLI_GUIDE_PT.md)
+- PT-BR quick guide: [`GUIA_SIMPLES_PT.md`](GUIA_SIMPLES_PT.md)
+
+## Project structure
 
 ```
 career-ops/
-├── CLAUDE.md                    # Optional agent instructions
-├── cv.md                        # Your CV (create this)
-├── article-digest.md            # Your proof points (optional)
 ├── config/
-│   └── profile.example.yml      # Template for your profile
-├── modes/                       # 14 skill modes
-│   ├── _shared.md               # Shared context (customize this)
-│   ├── oferta.md                # Single evaluation
-│   ├── pdf.md                   # PDF generation
-│   ├── scan.md                  # Portal scanner
-│   ├── batch.md                 # Batch processing
-│   └── ...
+├── data/
+├── dashboard/
+├── docs/
+├── examples/
+├── jds/
+├── modes/
+├── output/
+├── reports/
 ├── templates/
-│   ├── cv-template.html         # ATS-optimized CV template
-│   ├── portals.example.yml      # Scanner config template
-│   └── states.yml               # Canonical statuses
-├── batch/
-│   ├── batch-prompt.md          # Self-contained worker prompt
-│   └── batch-runner.sh          # Orchestrator script
-├── dashboard/                   # Go TUI pipeline viewer
-├── data/                        # Your tracking data (gitignored)
-├── reports/                     # Evaluation reports (gitignored)
-├── output/                      # Generated PDFs (gitignored)
-├── fonts/                       # Space Grotesk + DM Sans
-├── docs/                        # Setup, customization, architecture
-└── examples/                    # Sample CV, report, proof points
+└── batch/
 ```
-
-## Tech Stack
-
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
-![Bubble Tea](https://img.shields.io/badge/Bubble_Tea-FF75B5?style=flat&logo=go&logoColor=white)
-
-- **Automation**: local Node scripts, markdown workflows, and optional AI integration
-- **PDF**: Playwright + HTML template
-- **Scanner**: Playwright + targeted search queries
-- **Dashboard**: Go + Bubble Tea + Lipgloss
-- **Data**: Markdown tables + YAML config + TSV batch files
-
-## Star History
-
-<a href="https://www.star-history.com/?repos=santifer%2Fcareer-ops&type=timeline&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Wancoe/career-ops-template&type=timeline&theme=dark&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Wancoe/career-ops-template&type=timeline&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Wancoe/career-ops-template&type=timeline&legend=top-left" />
- </picture>
-</a>
 
 ## Disclaimer
 
-**career-ops is a local, open-source tool — NOT a hosted service.** By using this software, you acknowledge:
+Career-Ops is a local tool, not a hosted service.
 
-1. **You control your data.** Your CV, contact info, and personal data stay on your machine and are sent directly to the AI provider you choose (Anthropic, OpenAI, etc.). We do not collect, store, or have access to any of your data.
-2. **You control the AI.** The default prompts instruct the AI not to auto-submit applications, but AI models can behave unpredictably. If you modify the prompts or use different models, you do so at your own risk. **Always review AI-generated content for accuracy before submitting.**
-3. **You comply with third-party ToS.** You must use this tool in accordance with the Terms of Service of the career portals you interact with (Greenhouse, Lever, Workday, LinkedIn, etc.). Do not use this tool to spam employers or overwhelm ATS systems.
-4. **No guarantees.** Evaluations are recommendations, not truth. AI models may hallucinate skills or experience. The authors are not liable for employment outcomes, rejected applications, account restrictions, or any other consequences.
+- Your data stays on your machine and in your repository.
+- Use job portals according to their terms of service.
+- Evaluations are guidance, not guarantees.
 
-See [LEGAL_DISCLAIMER.md](LEGAL_DISCLAIMER.md) for full details. This software is provided under the [MIT License](LICENSE) "as is", without warranty of any kind.
+See [LEGAL_DISCLAIMER.md](LEGAL_DISCLAIMER.md) for full details.
 
 ## License
 
 MIT
-
-## Let's Connect
-
-[![Website](https://img.shields.io/badge/santifer.io-000?style=for-the-badge&logo=safari&logoColor=white)](https://santifer.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/santifer)
-[![X](https://img.shields.io/badge/X-000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/santifer)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/8pRpHETxa4)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hi@santifer.io)
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy_Me_a_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/santifer)
