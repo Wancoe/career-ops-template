@@ -106,6 +106,7 @@ See [docs/SETUP.md](docs/SETUP.md) for the full setup guide.
 
 ## Usage
 
+### With Claude Code (AI Agent)
 Career-ops is a single slash command with multiple modes:
 
 ```
@@ -124,6 +125,28 @@ Career-ops is a single slash command with multiple modes:
 ```
 
 Or just paste a job URL or description directly -- career-ops auto-detects it and runs the full pipeline.
+
+### Without Claude Code (Terminal CLI)
+If you don't have Claude Code (e.g., using Codex or no AI assistant), use the **terminal-based CLI**:
+
+```powershell
+# Evaluate a job manually
+node doctor.mjs                    # System health check
+node verify-pipeline.mjs           # Verify tracker integrity
+node merge-tracker.mjs             # Merge batch additions
+
+# Generate a tailored PDF
+node generate-pdf.mjs input.html output.pdf --format=a4
+
+# Check for updates
+node update-system.mjs check
+
+# Manage tracker
+node normalize-statuses.mjs        # Fix status formatting
+node dedup-tracker.mjs             # Remove duplicates
+```
+
+**See [`CLI_GUIDE.md`](CLI_GUIDE.md) for the complete terminal-based workflow** (job evaluation, CV tailoring, PDF generation, tracker management) or the quick reference: [`QUICK_REFERENCE.md`](QUICK_REFERENCE.md)
 
 ## How It Works
 
