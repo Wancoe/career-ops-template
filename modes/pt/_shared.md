@@ -193,15 +193,13 @@ Em vagas e negociacoes brasileiras, existem termos e praticas que nao aparecem n
 3. Enviar candidaturas em nome do candidato
 4. Compartilhar numero de telefone em mensagens geradas
 5. Recomendar remuneracao abaixo do mercado
-6. Gerar PDF sem ter lido a descricao da vaga antes
 7. Usar jargao corporativo ou "corporates"
 8. Ignorar o tracker (toda vaga avaliada e registrada)
 
 ### SEMPRE
 
-0. **Carta de apresentacao:** Se o formulario permite anexar ou escrever uma carta, SEMPRE inclua uma. PDF no mesmo design visual do curriculo. Conteudo: citacoes da descricao da vaga mapeadas para proof points, links para case studies relevantes. Maximo 1 pagina.
+0. **Carta de apresentacao:** Se o formulario permite anexar ou escrever uma carta, SEMPRE inclua uma. Conteudo: citacoes da descricao da vaga mapeadas para proof points, links para case studies relevantes. Maximo 1 pagina.
 1. Ler `cv.md`, `_profile.md` e `article-digest.md` (se existir) antes de avaliar qualquer vaga
-1b. **Na primeira avaliacao de cada sessao:** Executar `node cv-sync-check.mjs` via Bash. Se houver avisos, informar o candidato antes de continuar
 2. Detectar o arquetipo da vaga e adaptar o framing conforme `_profile.md`
 3. Ao fazer matching, citar linhas exatas do curriculo
 4. Usar WebSearch para dados de remuneracao e empresa
@@ -209,7 +207,6 @@ Em vagas e negociacoes brasileiras, existem termos e praticas que nao aparecem n
 6. Gerar conteudo na lingua da descricao da vaga (PT-BR padrao)
 7. Ser direto e pratico — sem enrolacao
 8. Ao gerar texto em portugues (PDF summaries, bullets, mensagens LinkedIn, historias STAR): portugues tech natural, nao traducao literal. Frases curtas, verbos de acao, evitar voz passiva. Termos tecnicos (stack, pipeline, deployment, embedding) nao precisam ser traduzidos
-8b. **URLs de case studies no PDF Professional Summary:** Se o PDF menciona case studies ou demos, as URLs DEVEM aparecer ja no primeiro paragrafo (Professional Summary). Recrutadores frequentemente so leem o resumo. Todos os URLs no HTML com `white-space: nowrap`
 9. **Entradas no tracker como TSV** — NUNCA editar `applications.md` diretamente para novos registros. Escrever TSV em `batch/tracker-additions/`, `merge-tracker.mjs` cuida do merge
 10. **Incluir `**URL:**` em todo header de report** — entre Score e PDF
 
@@ -220,7 +217,6 @@ Em vagas e negociacoes brasileiras, existem termos e praticas que nao aparecem n
 | WebSearch | Pesquisa de remuneracao, tendencias, cultura da empresa, contatos LinkedIn, fallback para descricoes de vagas |
 | WebFetch | Fallback para extrair descricoes de vagas de paginas estaticas |
 | Playwright | Verificar se vagas ainda estao ativas (browser_navigate + browser_snapshot), extrair descricoes de SPAs. **CRITICO: NUNCA iniciar 2+ agentes com Playwright em paralelo — eles compartilham a mesma instancia do navegador** |
-| Read | cv.md, _profile.md, article-digest.md, cv-template.html |
-| Write | HTML temporario para PDF, applications.md, reports .md |
+| Read | cv.md, _profile.md, article-digest.md |
+| Write | applications.md, reports .md |
 | Edit | Atualizar tracker |
-| Bash | `node generate-pdf.mjs` |

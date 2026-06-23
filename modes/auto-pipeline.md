@@ -22,10 +22,7 @@ Ejecutar exactamente igual que el modo `oferta` (leer `modes/oferta.md` para tod
 ## Paso 2 — Guardar Report .md
 Guardar la evaluación completa en `reports/{###}-{company-slug}-{YYYY-MM-DD}.md` (ver formato en `modes/oferta.md`).
 
-## Paso 3 — Generar PDF
-Ejecutar el pipeline completo de `pdf` (leer `modes/pdf.md`).
-
-## Paso 4 — Draft Application Answers (solo si score >= 4.5)
+## Paso 3 — Draft Application Answers (solo si score >= 4.5)
 
 Si el score final es >= 4.5, generar borrador de respuestas para el formulario de aplicación:
 
@@ -61,7 +58,7 @@ Si el score final es >= 4.5, generar borrador de respuestas para el formulario d
 
 **Idioma**: Siempre en el idioma del JD (EN default). Aplicar `/tech-translate`.
 
-## Paso 5 — Actualizar Tracker
-Registrar en `data/applications.md` con todas las columnas incluyendo Report y PDF en ✅.
+## Paso 4 — Actualizar Tracker
+Registrar en `data/applications.md` con todas las columnas incluyendo Report.
 
 **Si algún paso falla**, continuar con los siguientes y marcar el paso fallido como pendiente en el tracker.

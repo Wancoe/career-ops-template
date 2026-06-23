@@ -62,7 +62,6 @@ Create your CV in `cv.md`, add job descriptions to `jds/`, and write evaluation 
 | Evaluate an offer | Paste a URL or JD text |
 | Search for offers | `/career-ops scan` |
 | Process pending URLs | `/career-ops pipeline` |
-| Generate a PDF | `/career-ops pdf` |
 | Batch evaluate | `/career-ops batch` |
 | Check tracker status | `/career-ops tracker` |
 | Fill application form | `/career-ops apply` |
@@ -70,7 +69,6 @@ Create your CV in `cv.md`, add job descriptions to `jds/`, and write evaluation 
 ## Verify Setup
 
 ```bash
-node cv-sync-check.mjs      # Check configuration
 node verify-pipeline.mjs     # Check pipeline integrity
 ```
 
