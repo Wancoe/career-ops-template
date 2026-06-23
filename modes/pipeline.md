@@ -48,10 +48,3 @@ Procesa URLs de ofertas acumuladas en `data/pipeline.md`. El usuario agrega URLs
 2. Extraer el número del prefijo (e.g., `142-medispend...` → 142)
 3. Nuevo número = máximo encontrado + 1
 
-## Sincronización de fuentes
-
-Antes de procesar cualquier URL, verificar sync:
-```bash
-node cv-sync-check.mjs
-```
-Si hay desincronización, advertir al usuario antes de continuar.

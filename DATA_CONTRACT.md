@@ -29,7 +29,6 @@ These files contain system logic, scripts, templates, and instructions that impr
 |------|---------|
 | `modes/_shared.md` | Scoring system, global rules, tools |
 | `modes/oferta.md` | Evaluation mode instructions |
-| `modes/pdf.md` | PDF generation instructions |
 | `modes/scan.md` | Portal scanner instructions |
 | `modes/batch.md` | Batch processing instructions |
 | `modes/apply.md` | Application assistant instructions |
@@ -38,9 +37,7 @@ These files contain system logic, scripts, templates, and instructions that impr
 | `modes/deep.md` | Research prompt instructions |
 | `modes/ofertas.md` | Comparison instructions |
 | `modes/pipeline.md` | Pipeline processing instructions |
-| `modes/project.md` | Project evaluation instructions |
 | `modes/tracker.md` | Tracker instructions |
-| `modes/training.md` | Training evaluation instructions |
 | `modes/de/*` | German language modes |
 | `CLAUDE.md` | Agent instructions |
 | `AGENTS.md` | Codex instructions |
