@@ -1,3 +1,7 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 # Career-Ops -- AI Job Search Pipeline
 
 ## Origin
@@ -296,3 +300,78 @@ Write one TSV file per evaluation to `batch/tracker-additions/{num}-{company-slu
 - No markdown bold (`**`) in status field
 - No dates in status field (use the date column)
 - No extra text (use the notes column)
+
+---
+
+## Web Dashboard
+
+The `dashboard/` directory is a Svelte 5 + Vite frontend. The `server/` directory is an Express API that reads/writes the markdown files on disk. Both replaced the old Go TUI.
+
+### Running the dashboard
+
+```bash
+# Option 1 — two terminals
+cd server && node index.mjs          # API on :3001
+cd dashboard && npm run dev          # Vite on :5173
+
+# Option 2 — one command
+cd dashboard && npm run dev:all      # concurrently starts both
+```
+
+Open `http://localhost:5173`. The Vite dev server proxies `/api/*` → `:3001` (configured in `dashboard/vite.config.js`), so there are no CORS issues during development.
+
+**Do not use `PORT` env var for the API** — Vite/preview tooling injects `PORT=5173`, which would break Express. The API uses `API_PORT` (defaults to `3001`).
+
+### Architecture
+
+```
+server/
+  index.mjs              ← Entry point. Reads CAREER_OPS_PATH env (default: ../)
+  parser.mjs             ← All markdown parsing: applications, reports, metrics, status update
+  routes/applications.mjs ← GET /, GET /metrics, PATCH /:reportNumber
+  routes/reports.mjs     ← GET /:id → { archetype, tldr, remote, comp, rawMarkdown }
+
+dashboard/src/
+  App.svelte             ← Root: $state for applications, metrics, selectedApp, filters
+  lib/api.js             ← All fetch() calls (single source of truth for API URLs)
+  lib/Sidebar.svelte     ← Status filter buttons with $derived counts
+  lib/MetricsBar.svelte  ← Receives metrics prop, renders stat tiles
+  lib/SearchBox.svelte   ← Emits search text via onSearch callback
+  lib/PipelineTable.svelte ← Receives filtered apps as prop, emits onSelect/onSort
+  lib/PreviewPanel.svelte  ← Receives selected app, fetches report metadata lazily
+  lib/ReportViewer.svelte  ← Full-screen overlay, renders rawMarkdown via marked
+  lib/StatusDropdown.svelte ← PATCH /api/applications/:id, shows Saved indicator
+```
+
+### Svelte 5 patterns used
+
+- **`$state`** — mutable reactive variables (`applications`, `metrics`, `selectedApp`, `activeFilter`, `searchText`, `sortMode`). Reassign with `=`.
+- **`$derived.by`** — computed `filteredApps` chain (status filter → text search → sort). Use `$derived.by(() => { ... })` for multi-line logic, not `$derived(() => fn)`.
+- **`$effect`** — side effects after mount (initial data fetch, lazy report metadata fetch in PreviewPanel). Avoid using it as a general-purpose event bus.
+- **`$props()`** — child components receive data and callbacks as props: `let { apps, onSelect } = $props()`.
+- **Events** — Svelte 5 uses `onclick={handler}` (not `on:click`). Event handlers use `dispatchEvent(new MouseEvent('click', { bubbles: true }))` in tests because Svelte 5 uses event delegation (attaches listeners higher in the tree, not on the element itself).
+
+### parser.mjs — key facts
+
+`parser.mjs` is a direct JS port of `dashboard/internal/data/career.go` (now deleted). Keep these two in sync if logic changes:
+
+- `parseApplications(root)` — reads `applications.md` (or `data/applications.md` fallback), handles both pure-pipe and tab-mixed formats, runs 5-tier URL enrichment.
+- `normalizeStatus(raw)` — maps raw strings (Portuguese + English aliases) to 8 canonical values. Aliases must match `templates/states.yml`.
+- `updateApplicationStatus(root, reportNumber, oldStatus, newStatus)` — finds the row by report number (`[001]` pattern), replaces status in-place, writes the file back.
+- `loadReportSummary(root, reportPath)` — extracts `archetype`, `tldr`, `remote`, `comp` from a report's header table using regex.
+- `computeMetrics(apps)` — returns `{ total, byStatus, avgScore, topScore, withPDF, actionable }`.
+
+### Adding a new feature
+
+1. **New API data** → add field to `parseApplications()` return object in `server/parser.mjs`, expose via the relevant route.
+2. **New UI state** → add `$state` in `App.svelte`, pass down as prop.
+3. **New derived view** → use `$derived.by()` in `App.svelte`, pass result as `apps` prop to `PipelineTable`.
+4. **New write operation** → add `PATCH` route in `server/routes/applications.mjs`, add function to `dashboard/src/lib/api.js`, call from the relevant component.
+
+### Build
+
+```bash
+cd dashboard && npm run build    # outputs to dashboard/dist/
+```
+
+`dist/` is gitignored. The build is only needed for production; development uses Vite's dev server with HMR.
