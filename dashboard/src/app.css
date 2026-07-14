@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* GitHub-dark palette as CSS variables */
+:root {
+  --bg-canvas:    #0d1117;
+  --bg-default:   #161b22;
+  --bg-subtle:    #21262d;
+  --bg-overlay:   #2d333b;
+  --border:       #30363d;
+  --border-muted: #21262d;
+  --text-primary: #e6edf3;
+  --text-muted:   #8b949e;
+  --text-link:    #58a6ff;
+  --accent-blue:  #1f6feb;
+  --accent-green: #3fb950;
+  --accent-yellow:#d29922;
+  --accent-red:   #f85149;
+  --accent-purple:#bc8cff;
+}
+
+html, body, #app {
+  height: 100%;
+  margin: 0;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-canvas); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
